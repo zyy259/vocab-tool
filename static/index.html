@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>词汇量测评 - 京师词汇工具</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<!-- Nav -->
+<nav class="navbar" id="navbar">
+  <div class="nav-brand" onclick="navigate('home')">📚 京师词汇测评</div>
+  <div class="nav-links">
+    <a onclick="navigate('home')">首页</a>
+    <a onclick="navigate('assess')">开始测评</a>
+    <a onclick="navigate('learn')" id="nav-learn" class="hidden">学习模式</a>
+    <a onclick="navigate('dashboard')" id="nav-dashboard" class="hidden">我的记录</a>
+    <a onclick="navigate('admin')" id="nav-admin" class="hidden">管理后台</a>
+  </div>
+  <div class="nav-user" id="nav-user">
+    <button class="btn btn-outline" onclick="navigate('login')">登录</button>
+    <button class="btn btn-primary" onclick="navigate('register')">注册</button>
+  </div>
+</nav>
+
+<!-- Pages -->
+<div id="app">
+
+<!-- ═══ HOME ═══════════════════════════════════════════════ -->
+<div id="page-home" class="page active">
+  <div class="hero">
+    <div class="hero-badge">北京师范大学词汇体系</div>
+    <h1 class="hero-title">你的词汇量<br><span class="gradient-text">究竟有多少？</span></h1>
+    <p class="hero-sub">科学自适应算法 · 小学/初中/高中三级词库 · 3481词精准测评</p>
+    <div class="hero-actions">
+      <button class="btn btn-hero" onclick="navigate('assess')">立即测评</button>
+      <button class="btn btn-hero-outline" onclick="scrollToHow()">了解更多</button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-card"><span class="stat-num" id="h-total-words">3,481</span><span class="stat-label">词汇总量</span></div>
+      <div class="stat-card"><span class="stat-num" id="h-total-tests">--</span><span class="stat-label">累计测评次数</span></div>
+      <div class="stat-card"><span class="stat-num">2</span><span class="stat-label">测评算法</span></div>
+    </div>
+  </div>
+
+  <div class="section" id="how-section">
+    <h2 class="section-title">如何运作？</h2>
+    <div class="cards-3">
+      <div class="feature-card">
+        <div class="feature-icon">🎯</div>
+        <h3>自适应选题</h3>
+        <p>IRT算法根据你的答题表现动态调整题目难度，20题即可精准估算词汇量</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>科学评估</h3>
+        <p>基于项目反应理论（IRT），结合频次排名，给出置信度更高的词汇量估计</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📈</div>
+        <h3>追踪进步</h3>
+        <p>注册账号后保存每次测评记录，查看词汇量成长曲线，间隔重复学习单词</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section bg-light">
+    <h2 class="section-title">三级词库体系</h2>
+    <div class="level-cards">
+      <div class="level-card primary-card" onclick="startQuickAssess('primary')">
+        <div class="level-icon">🌱</div>
+        <h3>小学词库</h3>
+        <div class="level-count">505 词</div>
+        <p>基础高频核心词汇</p>
+        <button class="btn btn-sm btn-white">快速测评</button>
+      </div>
+      <div class="level-card middle-card" onclick="startQuickAssess('middle')">
+        <div class="level-icon">📖</div>
+        <h3>初中词库</h3>
+        <div class="level-count">1,110 词</div>
+        <p>中学必备词汇扩展</p>
+        <button class="btn btn-sm btn-white">快速测评</button>
+      </div>
+      <div class="level-card high-card" onclick="startQuickAssess('high')">
+        <div class="level-icon">🎓</div>
+        <h3>高中词库</h3>
+        <div class="level-count">1,866 词</div>
+        <p>高阶词汇综合提升</p>
+        <button class="btn btn-sm btn-white">快速测评</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ASSESS SETUP ═════════════════════════════════════════ -->
+<div id="page-assess" class="page">
+  <div class="container-sm">
+    <h2 class="page-title">配置测评</h2>
+    <div class="setup-card">
+      <div class="form-group">
+        <label>选择词库范围</label>
+        <div class="radio-group">
+          <label class="radio-card"><input type="radio" name="level" value="all" checked><span>全部词库<small>3481词</small></span></label>
+          <label class="radio-card"><input type="radio" name="level" value="primary"><span>小学<small>505词</small></span></label>
+          <label class="radio-card"><input type="radio" name="level" value="middle"><span>初中<small>1110词</small></span></label>
+          <label class="radio-card"><input type="radio" name="level" value="high"><span>高中<small>1866词</small></span></label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>测评算法</label>
+        <div class="radio-group">
+          <label class="radio-card">
+            <input type="radio" name="algo" value="irt" checked>
+            <span>IRT自适应<small>更精准（推荐）</small></span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="algo" value="binary">
+            <span>二分搜索<small>速度更快</small></span>
+          </label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>题目数量：<span id="q-count-label">20</span> 题</label>
+        <input type="range" id="q-count" min="5" max="40" value="20" oninput="document.getElementById('q-count-label').textContent=this.value">
+      </div>
+      <div class="anonymous-tip" id="anon-tip">
+        💡 <strong>匿名模式</strong>：测评结果不会保存。<a onclick="navigate('login')">登录</a>后可追踪进步
+      </div>
+      <button class="btn btn-primary btn-full" onclick="startAssessment()">开始测评</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ASSESSMENT IN PROGRESS ═══════════════════════════════ -->
+<div id="page-testing" class="page">
+  <div class="test-header">
+    <div class="test-progress-info">
+      <span id="test-q-num">0</span> / <span id="test-q-total">20</span>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="test-algo-badge" id="test-algo-badge">IRT</div>
+  </div>
+  <div class="container-sm">
+    <div class="question-card" id="question-card">
+      <div class="word-phonetic" id="word-phonetic"></div>
+      <div class="word-display" id="word-display">--</div>
+      <p class="question-hint">选择正确的中文释义：</p>
+      <div class="choices" id="choices"></div>
+      <div class="answer-feedback hidden" id="answer-feedback"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ RESULT ════════════════════════════════════════════════ -->
+<div id="page-result" class="page">
+  <div class="result-hero">
+    <div class="result-emoji" id="result-emoji">🎉</div>
+    <h2>测评完成！</h2>
+    <div class="result-score" id="result-score">0</div>
+    <div class="result-label">预估词汇量（词）</div>
+    <div class="result-level-badge" id="result-level-badge">初中水平</div>
+  </div>
+  <div class="container-sm">
+    <div class="result-stats">
+      <div class="rstat"><span class="rstat-v" id="r-accuracy">--</span><span class="rstat-l">正确率</span></div>
+      <div class="rstat"><span class="rstat-v" id="r-correct">--</span><span class="rstat-l">答对题数</span></div>
+      <div class="rstat"><span class="rstat-v" id="r-total">--</span><span class="rstat-l">总题数</span></div>
+      <div class="rstat"><span class="rstat-v" id="r-algo">--</span><span class="rstat-l">算法</span></div>
+    </div>
+
+    <div class="result-detail-section">
+      <h3>答题详情</h3>
+      <div id="result-details" class="detail-list"></div>
+    </div>
+
+    <div class="result-actions">
+      <button class="btn btn-primary" onclick="navigate('assess')">再测一次</button>
+      <button class="btn btn-outline" onclick="navigate('home')">返回首页</button>
+      <button class="btn btn-outline" id="btn-save-result" onclick="navigate('dashboard')" style="display:none">查看记录</button>
+    </div>
+
+    <div class="share-section">
+      <p>分享我的成绩：</p>
+      <button class="btn btn-sm btn-share" onclick="shareResult()">📋 复制分享文字</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ LOGIN ═════════════════════════════════════════════════ -->
+<div id="page-login" class="page">
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2>登录账号</h2>
+      <div class="form-group">
+        <label>用户名或邮箱</label>
+        <input type="text" id="login-id" class="form-input" placeholder="请输入用户名或邮箱">
+      </div>
+      <div class="form-group">
+        <label>密码</label>
+        <input type="password" id="login-pwd" class="form-input" placeholder="请输入密码" onkeydown="if(event.key==='Enter')doLogin()">
+      </div>
+      <div class="form-error hidden" id="login-err"></div>
+      <button class="btn btn-primary btn-full" onclick="doLogin()">登录</button>
+      <p class="auth-switch">还没有账号？<a onclick="navigate('register')">立即注册</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ REGISTER ══════════════════════════════════════════════ -->
+<div id="page-register" class="page">
+  <div class="auth-container">
+    <div class="auth-card">
+      <h2>创建账号</h2>
+      <div class="form-group">
+        <label>用户名</label>
+        <input type="text" id="reg-name" class="form-input" placeholder="2-20个字符">
+      </div>
+      <div class="form-group">
+        <label>邮箱</label>
+        <input type="email" id="reg-email" class="form-input" placeholder="your@email.com">
+      </div>
+      <div class="form-group">
+        <label>密码</label>
+        <input type="password" id="reg-pwd" class="form-input" placeholder="至少6位" onkeydown="if(event.key==='Enter')doRegister()">
+      </div>
+      <div class="form-error hidden" id="reg-err"></div>
+      <button class="btn btn-primary btn-full" onclick="doRegister()">注册并登录</button>
+      <p class="auth-switch">已有账号？<a onclick="navigate('login')">直接登录</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ DASHBOARD ═════════════════════════════════════════════ -->
+<div id="page-dashboard" class="page">
+  <div class="container">
+    <h2 class="page-title">我的记录</h2>
+    <div class="dashboard-top">
+      <div class="dash-stat" id="dash-total-tests"><span class="ds-v">--</span><span class="ds-l">测评次数</span></div>
+      <div class="dash-stat" id="dash-best-score"><span class="ds-v">--</span><span class="ds-l">最高词汇量</span></div>
+      <div class="dash-stat" id="dash-avg-acc"><span class="ds-v">--</span><span class="ds-l">平均正确率</span></div>
+    </div>
+    <div class="chart-section">
+      <h3>词汇量趋势</h3>
+      <div class="chart-wrap"><canvas id="trend-chart" width="700" height="220"></canvas></div>
+    </div>
+    <div class="history-section">
+      <h3>历史记录</h3>
+      <div id="history-list" class="history-list"></div>
+      <div class="pagination" id="history-pagination"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ LEARN (Spaced Repetition) ════════════════════════════ -->
+<div id="page-learn" class="page">
+  <div class="container-sm">
+    <h2 class="page-title">间隔重复学习</h2>
+    <p class="page-sub">基于SM-2算法，根据记忆曲线安排复习计划</p>
+    <div id="learn-due-count" class="due-banner"></div>
+    <div id="learn-card" class="learn-card hidden">
+      <div class="lc-phonetic" id="lc-phonetic"></div>
+      <div class="lc-word" id="lc-word">--</div>
+      <div class="lc-meaning hidden" id="lc-meaning">--</div>
+      <button class="btn btn-outline btn-full" id="lc-reveal-btn" onclick="revealLearnCard()">显示释义</button>
+      <div class="lc-buttons hidden" id="lc-buttons">
+        <p>你记得多好？</p>
+        <div class="quality-btns">
+          <button class="btn btn-danger" onclick="submitReview(1)">完全忘记</button>
+          <button class="btn btn-warning" onclick="submitReview(3)">有点模糊</button>
+          <button class="btn btn-success" onclick="submitReview(5)">完全记住</button>
+        </div>
+      </div>
+    </div>
+    <div id="learn-empty" class="learn-empty hidden">
+      <div class="empty-icon">🎊</div>
+      <h3>今日复习完成！</h3>
+      <p>所有单词都已复习，明天再来吧</p>
+      <button class="btn btn-primary" onclick="navigate('assess')">去做测评</button>
+    </div>
+    <div id="learn-login-tip" class="learn-empty hidden">
+      <div class="empty-icon">🔐</div>
+      <h3>请先登录</h3>
+      <p>登录后才能使用间隔重复学习功能</p>
+      <button class="btn btn-primary" onclick="navigate('login')">立即登录</button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ ADMIN ══════════════════════════════════════════════════ -->
+<div id="page-admin" class="page">
+  <div class="container">
+    <h2 class="page-title">管理后台</h2>
+    <div class="admin-tabs">
+      <button class="tab-btn active" onclick="adminTab('overview')">概览</button>
+      <button class="tab-btn" onclick="adminTab('users')">用户管理</button>
+      <button class="tab-btn" onclick="adminTab('words')">词库管理</button>
+      <button class="tab-btn" onclick="adminTab('records')">测评记录</button>
+    </div>
+
+    <!-- Overview -->
+    <div id="admin-overview" class="admin-panel">
+      <div class="admin-stats">
+        <div class="admin-stat-card"><span id="as-users">--</span><label>注册用户</label></div>
+        <div class="admin-stat-card"><span id="as-tests">--</span><label>总测评次数</label></div>
+        <div class="admin-stat-card"><span id="as-words">--</span><label>启用词汇</label></div>
+      </div>
+      <h3>最近测评</h3>
+      <table class="admin-table" id="admin-recent-table">
+        <thead><tr><th>ID</th><th>用户</th><th>词库</th><th>算法</th><th>词汇量</th><th>正确率</th><th>时间</th></tr></thead>
+        <tbody id="admin-recent-body"></tbody>
+      </table>
+      <button class="btn btn-outline" onclick="adminSeedWords()">📥 导入词库到数据库</button>
+    </div>
+
+    <!-- Users -->
+    <div id="admin-users" class="admin-panel hidden">
+      <div class="admin-toolbar">
+        <input type="text" id="user-search" class="form-input" placeholder="搜索用户名/邮箱" oninput="loadAdminUsers()">
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>ID</th><th>用户名</th><th>邮箱</th><th>管理员</th><th>测评数</th><th>注册时间</th><th>操作</th></tr></thead>
+        <tbody id="admin-users-body"></tbody>
+      </table>
+      <div class="pagination" id="admin-users-pagination"></div>
+    </div>
+
+    <!-- Words -->
+    <div id="admin-words" class="admin-panel hidden">
+      <div class="admin-toolbar">
+        <select id="word-level-filter" class="form-input" onchange="loadAdminWords()" style="width:auto">
+          <option value="">所有词库</option>
+          <option value="primary">小学</option>
+          <option value="middle">初中</option>
+          <option value="high">高中</option>
+        </select>
+        <input type="text" id="word-search" class="form-input" placeholder="搜索词汇" oninput="loadAdminWords()">
+        <button class="btn btn-primary btn-sm" onclick="showAddWordModal()">+ 添加词汇</button>
+      </div>
+      <table class="admin-table">
+        <thead><tr><th>ID</th><th>词汇</th><th>释义</th><th>音标</th><th>词库</th><th>频次</th><th>启用</th><th>操作</th></tr></thead>
+        <tbody id="admin-words-body"></tbody>
+      </table>
+      <div class="pagination" id="admin-words-pagination"></div>
+    </div>
+
+    <!-- Records -->
+    <div id="admin-records" class="admin-panel hidden">
+      <table class="admin-table">
+        <thead><tr><th>ID</th><th>用户</th><th>词库</th><th>算法</th><th>词汇量</th><th>正确率</th><th>等级</th><th>时间</th></tr></thead>
+        <tbody id="admin-records-body"></tbody>
+      </table>
+      <div class="pagination" id="admin-records-pagination"></div>
+    </div>
+  </div>
+</div>
+
+</div><!-- #app -->
+
+<!-- Modal -->
+<div id="modal-overlay" class="modal-overlay hidden" onclick="closeModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <div class="modal-header"><h3 id="modal-title">弹窗</h3><button onclick="closeModal()">✕</button></div>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="toast hidden"></div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

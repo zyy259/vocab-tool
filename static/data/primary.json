@@ -1,0 +1,4042 @@
+[
+  {
+    "id": 1,
+    "word": "the",
+    "meaning": "art.这(那)个,这(那)些(用于特定人或物、序数词、最高级、专有名词,世上独一无二事物前)",
+    "phonetic": "/ðə/",
+    "level": "primary",
+    "freq_rank": 1
+  },
+  {
+    "id": 2,
+    "word": "be(am, is, are)",
+    "meaning": "v.是(原形),成为",
+    "phonetic": "/be(am*, ɪz, ər)/",
+    "level": "primary",
+    "freq_rank": 2
+  },
+  {
+    "id": 3,
+    "word": "of",
+    "meaning": "prep(表示所属、数量,其中)……的",
+    "phonetic": "/əv/",
+    "level": "primary",
+    "freq_rank": 3
+  },
+  {
+    "id": 4,
+    "word": "and",
+    "meaning": "conj.和;又;而",
+    "phonetic": "/ənd/",
+    "level": "primary",
+    "freq_rank": 4
+  },
+  {
+    "id": 5,
+    "word": "to",
+    "meaning": "prep.(动词不定式符号,无词义);(表示接受动作的人或物)给;对,向,到;在……之前",
+    "phonetic": "/tɪ/",
+    "level": "primary",
+    "freq_rank": 5
+  },
+  {
+    "id": 6,
+    "word": "a/an",
+    "meaning": "art.一(个、件……)",
+    "phonetic": "/a/an*/",
+    "level": "primary",
+    "freq_rank": 6
+  },
+  {
+    "id": 7,
+    "word": "in",
+    "meaning": "prep.在……里(内);在……;以……",
+    "phonetic": "/ɪn/",
+    "level": "primary",
+    "freq_rank": 7
+  },
+  {
+    "id": 8,
+    "word": "have (has)",
+    "meaning": "vt.有;吃;喝;进行;经受",
+    "phonetic": "/hæv (həz)/",
+    "level": "primary",
+    "freq_rank": 8
+  },
+  {
+    "id": 9,
+    "word": "it",
+    "meaning": "pron.它",
+    "phonetic": "/ɪt/",
+    "level": "primary",
+    "freq_rank": 9
+  },
+  {
+    "id": 10,
+    "word": "its",
+    "meaning": "pron.它的",
+    "phonetic": "/ɪts/",
+    "level": "primary",
+    "freq_rank": 10
+  },
+  {
+    "id": 11,
+    "word": "he",
+    "meaning": "pron.他",
+    "phonetic": "/hi/",
+    "level": "primary",
+    "freq_rank": 11
+  },
+  {
+    "id": 12,
+    "word": "him",
+    "meaning": "pron.他(宾格)",
+    "phonetic": "/ɪm/",
+    "level": "primary",
+    "freq_rank": 12
+  },
+  {
+    "id": 13,
+    "word": "his",
+    "meaning": "pron.他的",
+    "phonetic": "/hɪz/",
+    "level": "primary",
+    "freq_rank": 13
+  },
+  {
+    "id": 14,
+    "word": "that",
+    "meaning": "adj.&pron.conj.那,那个;那,那个(引导宾语从句等)",
+    "phonetic": "/ðət/",
+    "level": "primary",
+    "freq_rank": 14
+  },
+  {
+    "id": 15,
+    "word": "I",
+    "meaning": "pron.我",
+    "phonetic": "/aɪ/",
+    "level": "primary",
+    "freq_rank": 15
+  },
+  {
+    "id": 16,
+    "word": "me",
+    "meaning": "pron我(宾格)",
+    "phonetic": "/mi/",
+    "level": "primary",
+    "freq_rank": 16
+  },
+  {
+    "id": 17,
+    "word": "my",
+    "meaning": "pron.我的",
+    "phonetic": "/maɪ/",
+    "level": "primary",
+    "freq_rank": 17
+  },
+  {
+    "id": 18,
+    "word": "our",
+    "meaning": "pron我们的",
+    "phonetic": "/ɑr/",
+    "level": "primary",
+    "freq_rank": 18
+  },
+  {
+    "id": 19,
+    "word": "us",
+    "meaning": "pron.我们(宾格)",
+    "phonetic": "/ˈjuˈɛs/",
+    "level": "primary",
+    "freq_rank": 19
+  },
+  {
+    "id": 20,
+    "word": "for",
+    "meaning": "prep.为了…;向…,往;与…交换;适合…;因为…",
+    "phonetic": "/fər/",
+    "level": "primary",
+    "freq_rank": 20
+  },
+  {
+    "id": 21,
+    "word": "their",
+    "meaning": "pron.他(或她、它)们的",
+    "phonetic": "/ðɛr/",
+    "level": "primary",
+    "freq_rank": 21
+  },
+  {
+    "id": 22,
+    "word": "them",
+    "meaning": "pron.他／她／它们(宾格)",
+    "phonetic": "/ðɛm/",
+    "level": "primary",
+    "freq_rank": 22
+  },
+  {
+    "id": 23,
+    "word": "they",
+    "meaning": "pron.他(她)们;它们;人们",
+    "phonetic": "/ðeɪ/",
+    "level": "primary",
+    "freq_rank": 23
+  },
+  {
+    "id": 24,
+    "word": "you",
+    "meaning": "pron.你;你们",
+    "phonetic": "/ju/",
+    "level": "primary",
+    "freq_rank": 24
+  },
+  {
+    "id": 25,
+    "word": "your",
+    "meaning": "pron.你的;你们的",
+    "phonetic": "/jʊr/",
+    "level": "primary",
+    "freq_rank": 25
+  },
+  {
+    "id": 26,
+    "word": "not",
+    "meaning": "adv.不,没",
+    "phonetic": "/nɑt/",
+    "level": "primary",
+    "freq_rank": 26
+  },
+  {
+    "id": 27,
+    "word": "on",
+    "meaning": "prep.在……上面;关于",
+    "phonetic": "/ɔn/",
+    "level": "primary",
+    "freq_rank": 27
+  },
+  {
+    "id": 28,
+    "word": "her",
+    "meaning": "pron.她(宾格),她的",
+    "phonetic": "/hər/",
+    "level": "primary",
+    "freq_rank": 28
+  },
+  {
+    "id": 29,
+    "word": "she",
+    "meaning": "pron她",
+    "phonetic": "/ʃi/",
+    "level": "primary",
+    "freq_rank": 29
+  },
+  {
+    "id": 30,
+    "word": "with",
+    "meaning": "prep.关于,带有,以,和,用,有",
+    "phonetic": "/wɪθ/",
+    "level": "primary",
+    "freq_rank": 30
+  },
+  {
+    "id": 31,
+    "word": "these",
+    "meaning": "adj.&pron.这些",
+    "phonetic": "/ðiz/",
+    "level": "primary",
+    "freq_rank": 31
+  },
+  {
+    "id": 32,
+    "word": "this",
+    "meaning": "adj.& pron.这,这个",
+    "phonetic": "/ðɪs/",
+    "level": "primary",
+    "freq_rank": 32
+  },
+  {
+    "id": 33,
+    "word": "those",
+    "meaning": "adj.& pron.那些",
+    "phonetic": "/ðoʊz/",
+    "level": "primary",
+    "freq_rank": 33
+  },
+  {
+    "id": 34,
+    "word": "do",
+    "meaning": "v.&aux.v做,干(用以构成疑问句及否定句。第三人称单数现在时用does)",
+    "phonetic": "/du/",
+    "level": "primary",
+    "freq_rank": 34
+  },
+  {
+    "id": 35,
+    "word": "we",
+    "meaning": "pron.我们",
+    "phonetic": "/wi/",
+    "level": "primary",
+    "freq_rank": 35
+  },
+  {
+    "id": 36,
+    "word": "at",
+    "meaning": "prep.在(几点钟);在(某处)",
+    "phonetic": "/æt/",
+    "level": "primary",
+    "freq_rank": 36
+  },
+  {
+    "id": 37,
+    "word": "by",
+    "meaning": "prep.靠近;在…旁边;在…时间;不迟于;被;用;由;乘(车)",
+    "phonetic": "/baɪ/",
+    "level": "primary",
+    "freq_rank": 37
+  },
+  {
+    "id": 38,
+    "word": "but",
+    "meaning": "conj.但是;可是;除了",
+    "phonetic": "/bət/",
+    "level": "primary",
+    "freq_rank": 38
+  },
+  {
+    "id": 39,
+    "word": "from",
+    "meaning": "prep.从;从……起;来自",
+    "phonetic": "/frəm/",
+    "level": "primary",
+    "freq_rank": 39
+  },
+  {
+    "id": 40,
+    "word": "or",
+    "meaning": "conj.或,就是,否则",
+    "phonetic": "/ər/",
+    "level": "primary",
+    "freq_rank": 40
+  },
+  {
+    "id": 41,
+    "word": "which",
+    "meaning": "pron.adj.那(哪)个;那(哪)一些;这(哪)个;这(哪)些",
+    "phonetic": "/wɪʧ/",
+    "level": "primary",
+    "freq_rank": 41
+  },
+  {
+    "id": 42,
+    "word": "will",
+    "meaning": "modal v.将,会(表示将来),愿意,要",
+    "phonetic": "/wɪl/",
+    "level": "primary",
+    "freq_rank": 42
+  },
+  {
+    "id": 43,
+    "word": "say",
+    "meaning": "vt.说,讲",
+    "phonetic": "/seɪ/",
+    "level": "primary",
+    "freq_rank": 43
+  },
+  {
+    "id": 44,
+    "word": "there",
+    "meaning": "int.adv.那!你瞧(表示引起注意)那里,那儿;在那里,往那里;(作引导词)表示“存在”",
+    "phonetic": "/ðɛr/",
+    "level": "primary",
+    "freq_rank": 44
+  },
+  {
+    "id": 45,
+    "word": "all",
+    "meaning": "adv.&adj.&pron.全部地全(部);所有的",
+    "phonetic": "/ɔl/",
+    "level": "primary",
+    "freq_rank": 45
+  },
+  {
+    "id": 46,
+    "word": "some",
+    "meaning": "adj.pron.一些,若干;有些;某一;若干,一些",
+    "phonetic": "/səm/",
+    "level": "primary",
+    "freq_rank": 46
+  },
+  {
+    "id": 47,
+    "word": "sometimes",
+    "meaning": "adv.有时",
+    "phonetic": "/ˈsəmˌtaɪmz/",
+    "level": "primary",
+    "freq_rank": 47
+  },
+  {
+    "id": 48,
+    "word": "no",
+    "meaning": "adv.adj.不,不是;没有,无,不",
+    "phonetic": "/noʊ/",
+    "level": "primary",
+    "freq_rank": 48
+  },
+  {
+    "id": 49,
+    "word": "can",
+    "meaning": "modal v.能够;可以;会;(不能)",
+    "phonetic": "/kən/",
+    "level": "primary",
+    "freq_rank": 49
+  },
+  {
+    "id": 50,
+    "word": "what",
+    "meaning": "pron.adj.什么,怎么样;多么,何等,什么",
+    "phonetic": "/wət/",
+    "level": "primary",
+    "freq_rank": 50
+  },
+  {
+    "id": 51,
+    "word": "go",
+    "meaning": "vi.去;走",
+    "phonetic": "/goʊ/",
+    "level": "primary",
+    "freq_rank": 51
+  },
+  {
+    "id": 52,
+    "word": "so",
+    "meaning": "adv.conj.如此,这么,非常;同样;因此,所以",
+    "phonetic": "/soʊ/",
+    "level": "primary",
+    "freq_rank": 52
+  },
+  {
+    "id": 53,
+    "word": "who",
+    "meaning": "pron.谁",
+    "phonetic": "/hu/",
+    "level": "primary",
+    "freq_rank": 53
+  },
+  {
+    "id": 54,
+    "word": "whose",
+    "meaning": "pron.谁的",
+    "phonetic": "/huz/",
+    "level": "primary",
+    "freq_rank": 54
+  },
+  {
+    "id": 55,
+    "word": "out",
+    "meaning": "adv.外出,在外;向外;熄",
+    "phonetic": "/aʊt/",
+    "level": "primary",
+    "freq_rank": 55
+  },
+  {
+    "id": 56,
+    "word": "make",
+    "meaning": "vt.制造,做;使得",
+    "phonetic": "/meɪk/",
+    "level": "primary",
+    "freq_rank": 56
+  },
+  {
+    "id": 57,
+    "word": "up",
+    "meaning": "adv.prep.向上;在上方;起来;在……以上;向(高处);向(在)……上(面)游",
+    "phonetic": "/əp/",
+    "level": "primary",
+    "freq_rank": 57
+  },
+  {
+    "id": 58,
+    "word": "get",
+    "meaning": "vt.成为;得到;具有;到达",
+    "phonetic": "/gɪt/",
+    "level": "primary",
+    "freq_rank": 58
+  },
+  {
+    "id": 59,
+    "word": "when",
+    "meaning": "conj.adv.当……的时候;什么时候,何时",
+    "phonetic": "/wɪn/",
+    "level": "primary",
+    "freq_rank": 59
+  },
+  {
+    "id": 60,
+    "word": "time",
+    "meaning": "n.时间;时期;钟点;次,回",
+    "phonetic": "/taɪm/",
+    "level": "primary",
+    "freq_rank": 60
+  },
+  {
+    "id": 61,
+    "word": "about",
+    "meaning": "adv.&prep.大约;关于;在各处",
+    "phonetic": "/əˈbaʊt/",
+    "level": "primary",
+    "freq_rank": 61
+  },
+  {
+    "id": 62,
+    "word": "know",
+    "meaning": "v.知道,了解;认识;懂得",
+    "phonetic": "/noʊ/",
+    "level": "primary",
+    "freq_rank": 62
+  },
+  {
+    "id": 63,
+    "word": "see",
+    "meaning": "vt.看见,看到;领会;拜会",
+    "phonetic": "/si/",
+    "level": "primary",
+    "freq_rank": 63
+  },
+  {
+    "id": 64,
+    "word": "use",
+    "meaning": "n.&vt.利用,使用,应用",
+    "phonetic": "/juz/",
+    "level": "primary",
+    "freq_rank": 64
+  },
+  {
+    "id": 65,
+    "word": "any",
+    "meaning": "pron.&adj.(无论)哪一个;那些;任何的",
+    "phonetic": "/ˈɛni/",
+    "level": "primary",
+    "freq_rank": 65
+  },
+  {
+    "id": 66,
+    "word": "year",
+    "meaning": "n.年",
+    "phonetic": "/jɪr/",
+    "level": "primary",
+    "freq_rank": 66
+  },
+  {
+    "id": 67,
+    "word": "take",
+    "meaning": "vt.拿;拿走;做;服用;乘坐;花费",
+    "phonetic": "/teɪk/",
+    "level": "primary",
+    "freq_rank": 67
+  },
+  {
+    "id": 68,
+    "word": "work",
+    "meaning": "n.v.工作,劳动,事情;工作,(机器、器官等)运转,活动",
+    "phonetic": "/wərk/",
+    "level": "primary",
+    "freq_rank": 68
+  },
+  {
+    "id": 69,
+    "word": "worker",
+    "meaning": "n.工人,工作者",
+    "phonetic": "/ˈwərkər/",
+    "level": "primary",
+    "freq_rank": 69
+  },
+  {
+    "id": 70,
+    "word": "think",
+    "meaning": "v.想;认为;考虑",
+    "phonetic": "/θɪŋk/",
+    "level": "primary",
+    "freq_rank": 70
+  },
+  {
+    "id": 71,
+    "word": "like",
+    "meaning": "prep.vt.像;跟……一样;喜欢;喜爱",
+    "phonetic": "/laɪk/",
+    "level": "primary",
+    "freq_rank": 71
+  },
+  {
+    "id": 72,
+    "word": "then",
+    "meaning": "adv.当时,那时;然后;那么(通常用于句首或句尾)",
+    "phonetic": "/ðɛn/",
+    "level": "primary",
+    "freq_rank": 72
+  },
+  {
+    "id": 73,
+    "word": "well",
+    "meaning": "adv.adj.int.好;好的,健康的;表示惊讶、同意",
+    "phonetic": "/wɛl/",
+    "level": "primary",
+    "freq_rank": 73
+  },
+  {
+    "id": 74,
+    "word": "come",
+    "meaning": "vi.来,来到",
+    "phonetic": "/kəm/",
+    "level": "primary",
+    "freq_rank": 74
+  },
+  {
+    "id": 75,
+    "word": "yes",
+    "meaning": "adv.是,好,同意",
+    "phonetic": "/jɛs/",
+    "level": "primary",
+    "freq_rank": 75
+  },
+  {
+    "id": 76,
+    "word": "now",
+    "meaning": "adv.现在",
+    "phonetic": "/naʊ/",
+    "level": "primary",
+    "freq_rank": 76
+  },
+  {
+    "id": 77,
+    "word": "over",
+    "meaning": "prep.adv.在……上方;遍及;遍布;越过;结束",
+    "phonetic": "/ˈoʊvər/",
+    "level": "primary",
+    "freq_rank": 77
+  },
+  {
+    "id": 78,
+    "word": "new",
+    "meaning": "adj.新的;新鲜的",
+    "phonetic": "/nu/",
+    "level": "primary",
+    "freq_rank": 78
+  },
+  {
+    "id": 79,
+    "word": "give",
+    "meaning": "vt.给;递给;付出;给予",
+    "phonetic": "/gɪv/",
+    "level": "primary",
+    "freq_rank": 79
+  },
+  {
+    "id": 80,
+    "word": "may",
+    "meaning": "modal.v可以;也许,可能",
+    "phonetic": "/meɪ/",
+    "level": "primary",
+    "freq_rank": 80
+  },
+  {
+    "id": 81,
+    "word": "look",
+    "meaning": "n.v.看,瞧;看,观看",
+    "phonetic": "/lʊk/",
+    "level": "primary",
+    "freq_rank": 81
+  },
+  {
+    "id": 82,
+    "word": "also",
+    "meaning": "adv.也",
+    "phonetic": "/ˈɔlsoʊ/",
+    "level": "primary",
+    "freq_rank": 82
+  },
+  {
+    "id": 83,
+    "word": "people",
+    "meaning": "n.人,人们;人民",
+    "phonetic": "/ˈpipəl/",
+    "level": "primary",
+    "freq_rank": 83
+  },
+  {
+    "id": 84,
+    "word": "very",
+    "meaning": "adv.很,非常",
+    "phonetic": "/ˈvɛri/",
+    "level": "primary",
+    "freq_rank": 84
+  },
+  {
+    "id": 85,
+    "word": "after",
+    "meaning": "adv.&prep.&conj.后来;在……后面;在……以后",
+    "phonetic": "/ˈæftər/",
+    "level": "primary",
+    "freq_rank": 85
+  },
+  {
+    "id": 86,
+    "word": "because",
+    "meaning": "conj.因为",
+    "phonetic": "/bɪˈkəz/",
+    "level": "primary",
+    "freq_rank": 86
+  },
+  {
+    "id": 87,
+    "word": "way",
+    "meaning": "n.路,路线,方式,手段",
+    "phonetic": "/weɪ/",
+    "level": "primary",
+    "freq_rank": 87
+  },
+  {
+    "id": 88,
+    "word": "back",
+    "meaning": "adv.&adj.回(原处);后面的后部",
+    "phonetic": "/bæk/",
+    "level": "primary",
+    "freq_rank": 88
+  },
+  {
+    "id": 89,
+    "word": "should",
+    "meaning": "modal.aux.v应当;应该;会;应该(shall的过去时态)",
+    "phonetic": "/ʃʊd/",
+    "level": "primary",
+    "freq_rank": 89
+  },
+  {
+    "id": 90,
+    "word": "where",
+    "meaning": "adv.在哪里,往哪里",
+    "phonetic": "/wɛr/",
+    "level": "primary",
+    "freq_rank": 90
+  },
+  {
+    "id": 91,
+    "word": "day",
+    "meaning": "n.天; 日;白天",
+    "phonetic": "/deɪ/",
+    "level": "primary",
+    "freq_rank": 91
+  },
+  {
+    "id": 92,
+    "word": "find",
+    "meaning": "vt.找到,发现,感到",
+    "phonetic": "/faɪnd/",
+    "level": "primary",
+    "freq_rank": 92
+  },
+  {
+    "id": 93,
+    "word": "man (pl. men)",
+    "meaning": "n.成年男人;人,人类",
+    "phonetic": "/mæn (pl*. mɛn)/",
+    "level": "primary",
+    "freq_rank": 93
+  },
+  {
+    "id": 94,
+    "word": "how",
+    "meaning": "adv.怎样,如何;多少;多么",
+    "phonetic": "/haʊ/",
+    "level": "primary",
+    "freq_rank": 94
+  },
+  {
+    "id": 95,
+    "word": "down",
+    "meaning": "prep.&adv.沿着,沿……而下;向下",
+    "phonetic": "/daʊn/",
+    "level": "primary",
+    "freq_rank": 95
+  },
+  {
+    "id": 96,
+    "word": "right",
+    "meaning": "adv.adj.对,正确的;正确地,恰恰;右,右边的",
+    "phonetic": "/raɪt/",
+    "level": "primary",
+    "freq_rank": 96
+  },
+  {
+    "id": 97,
+    "word": "want",
+    "meaning": "v.想,想要,需要,必要",
+    "phonetic": "/wɔnt/",
+    "level": "primary",
+    "freq_rank": 97
+  },
+  {
+    "id": 98,
+    "word": "much",
+    "meaning": "adj.许多的,大量的",
+    "phonetic": "/məʧ/",
+    "level": "primary",
+    "freq_rank": 98
+  },
+  {
+    "id": 99,
+    "word": "between",
+    "meaning": "prep.在(两者)之间,在……中间",
+    "phonetic": "/bɪtˈwin/",
+    "level": "primary",
+    "freq_rank": 99
+  },
+  {
+    "id": 100,
+    "word": "many",
+    "meaning": "pron.adj.许多人(事);许多的",
+    "phonetic": "/ˈmɛni/",
+    "level": "primary",
+    "freq_rank": 100
+  },
+  {
+    "id": 101,
+    "word": "before",
+    "meaning": "prep.&adv..在……以前;在……前面",
+    "phonetic": "/ˌbiˈfɔr/",
+    "level": "primary",
+    "freq_rank": 101
+  },
+  {
+    "id": 102,
+    "word": "good",
+    "meaning": "adj.好;良好",
+    "phonetic": "/gʊd/",
+    "level": "primary",
+    "freq_rank": 102
+  },
+  {
+    "id": 103,
+    "word": "long",
+    "meaning": "adj.长的,远",
+    "phonetic": "/lɔŋ/",
+    "level": "primary",
+    "freq_rank": 103
+  },
+  {
+    "id": 104,
+    "word": "every",
+    "meaning": "adv.每一,每个的",
+    "phonetic": "/ˈɛvəri/",
+    "level": "primary",
+    "freq_rank": 104
+  },
+  {
+    "id": 105,
+    "word": "last",
+    "meaning": "adj.vt.最近刚过去的;最后的",
+    "phonetic": "/læst/",
+    "level": "primary",
+    "freq_rank": 105
+  },
+  {
+    "id": 106,
+    "word": "off",
+    "meaning": "prep.adv.离开,脱离,(走)开;离开;(电,自来水)停了",
+    "phonetic": "/ɔf/",
+    "level": "primary",
+    "freq_rank": 106
+  },
+  {
+    "id": 107,
+    "word": "tell",
+    "meaning": "vt.告诉;讲述;吩咐",
+    "phonetic": "/tɛl/",
+    "level": "primary",
+    "freq_rank": 107
+  },
+  {
+    "id": 108,
+    "word": "child (pl. children)",
+    "meaning": "n.孩子,儿童",
+    "phonetic": "/ʧaɪld (pl*. ˈʧɪldrən)/",
+    "level": "primary",
+    "freq_rank": 108
+  },
+  {
+    "id": 109,
+    "word": "old",
+    "meaning": "adj.老的,旧的",
+    "phonetic": "/oʊld/",
+    "level": "primary",
+    "freq_rank": 109
+  },
+  {
+    "id": 110,
+    "word": "feel",
+    "meaning": "link.v感觉,觉得",
+    "phonetic": "/fil/",
+    "level": "primary",
+    "freq_rank": 110
+  },
+  {
+    "id": 111,
+    "word": "house",
+    "meaning": "n.房子;住宅",
+    "phonetic": "/haʊs/",
+    "level": "primary",
+    "freq_rank": 111
+  },
+  {
+    "id": 112,
+    "word": "great",
+    "meaning": "adj.adv.伟大的;重要的;好极了;(口语)好极了,很好",
+    "phonetic": "/greɪt/",
+    "level": "primary",
+    "freq_rank": 112
+  },
+  {
+    "id": 113,
+    "word": "must",
+    "meaning": "modal v.必须,应当;必定是",
+    "phonetic": "/məst/",
+    "level": "primary",
+    "freq_rank": 113
+  },
+  {
+    "id": 114,
+    "word": "show",
+    "meaning": "n.展示;展览(会);演出",
+    "phonetic": "/ʃoʊ/",
+    "level": "primary",
+    "freq_rank": 114
+  },
+  {
+    "id": 115,
+    "word": "place",
+    "meaning": "n.v.地方,处所;放置,安置,安排",
+    "phonetic": "/pleɪs/",
+    "level": "primary",
+    "freq_rank": 115
+  },
+  {
+    "id": 116,
+    "word": "here",
+    "meaning": "adv.这里,在这里;向这里",
+    "phonetic": "/hir/",
+    "level": "primary",
+    "freq_rank": 116
+  },
+  {
+    "id": 117,
+    "word": "put",
+    "meaning": "v.放,摆",
+    "phonetic": "/pʊt/",
+    "level": "primary",
+    "freq_rank": 117
+  },
+  {
+    "id": 118,
+    "word": "too",
+    "meaning": "adv.也,还;又;太,过分;很,非常",
+    "phonetic": "/tu/",
+    "level": "primary",
+    "freq_rank": 118
+  },
+  {
+    "id": 119,
+    "word": "Mr",
+    "meaning": "n.先生(用于姓名前)",
+    "phonetic": "/ˈmɪstər (eɪm ˈmɪstər.)/",
+    "level": "primary",
+    "freq_rank": 119
+  },
+  {
+    "id": 120,
+    "word": "Mrs",
+    "meaning": "n.夫人,太太(称呼已婚妇女)",
+    "phonetic": "/ˈmɪsɪz (eɪm ˈmɪsɪz.)/",
+    "level": "primary",
+    "freq_rank": 120
+  },
+  {
+    "id": 121,
+    "word": "Ms",
+    "meaning": "n.女士(用在婚姻状况不明的女子姓名前)",
+    "phonetic": "/mɪz (eɪm mɪz.)/",
+    "level": "primary",
+    "freq_rank": 121
+  },
+  {
+    "id": 122,
+    "word": "late",
+    "meaning": "adj.adv.晚的,迟的;晚地,迟地",
+    "phonetic": "/leɪt/",
+    "level": "primary",
+    "freq_rank": 122
+  },
+  {
+    "id": 123,
+    "word": "move",
+    "meaning": "v.移动,搬动,搬家",
+    "phonetic": "/muv/",
+    "level": "primary",
+    "freq_rank": 123
+  },
+  {
+    "id": 124,
+    "word": "call",
+    "meaning": "n.v.叫;电话,通话;称呼;喊;叫",
+    "phonetic": "/kɔl/",
+    "level": "primary",
+    "freq_rank": 124
+  },
+  {
+    "id": 125,
+    "word": "under",
+    "meaning": "prep.在……下面,向……下面",
+    "phonetic": "/ˈəndər/",
+    "level": "primary",
+    "freq_rank": 125
+  },
+  {
+    "id": 126,
+    "word": "little",
+    "meaning": "adj.小的,少的",
+    "phonetic": "/ˈlɪtəl/",
+    "level": "primary",
+    "freq_rank": 126
+  },
+  {
+    "id": 127,
+    "word": "play",
+    "meaning": "v.玩;打(球);游戏;播放",
+    "phonetic": "/pleɪ/",
+    "level": "primary",
+    "freq_rank": 127
+  },
+  {
+    "id": 128,
+    "word": "playground",
+    "meaning": "n.操场,运动场",
+    "phonetic": "/ˈpleɪˌgraʊnd/",
+    "level": "primary",
+    "freq_rank": 128
+  },
+  {
+    "id": 129,
+    "word": "hand",
+    "meaning": "n.手;指针",
+    "phonetic": "/hænd/",
+    "level": "primary",
+    "freq_rank": 129
+  },
+  {
+    "id": 130,
+    "word": "woman(pl. women)",
+    "meaning": "n.妇女,女人",
+    "phonetic": "/woman(pl*. ˈwɪmən)/",
+    "level": "primary",
+    "freq_rank": 130
+  },
+  {
+    "id": 131,
+    "word": "world",
+    "meaning": "n.世界",
+    "phonetic": "/wərld/",
+    "level": "primary",
+    "freq_rank": 131
+  },
+  {
+    "id": 132,
+    "word": "home",
+    "meaning": "n.&adv.家;家;回家",
+    "phonetic": "/hoʊm/",
+    "level": "primary",
+    "freq_rank": 132
+  },
+  {
+    "id": 133,
+    "word": "hometown",
+    "meaning": "n.故乡",
+    "phonetic": "/ˈhoʊmˌtaʊn/",
+    "level": "primary",
+    "freq_rank": 133
+  },
+  {
+    "id": 134,
+    "word": "ask",
+    "meaning": "v.问; 询问; 要求; 请求;",
+    "phonetic": "/æsk/",
+    "level": "primary",
+    "freq_rank": 134
+  },
+  {
+    "id": 135,
+    "word": "write",
+    "meaning": "v.写,书写,写作,著述",
+    "phonetic": "/raɪt/",
+    "level": "primary",
+    "freq_rank": 135
+  },
+  {
+    "id": 136,
+    "word": "help",
+    "meaning": "n.&vt.帮助,帮忙",
+    "phonetic": "/hɛlp/",
+    "level": "primary",
+    "freq_rank": 136
+  },
+  {
+    "id": 137,
+    "word": "helpful",
+    "meaning": "adj.有帮助的,有益的",
+    "phonetic": "/ˈhɛlpfəl/",
+    "level": "primary",
+    "freq_rank": 137
+  },
+  {
+    "id": 138,
+    "word": "interesting",
+    "meaning": "adj.有趣的",
+    "phonetic": "/ˈɪntəˌrɛstɪŋ/",
+    "level": "primary",
+    "freq_rank": 138
+  },
+  {
+    "id": 139,
+    "word": "again",
+    "meaning": "adv.再一次;再,又",
+    "phonetic": "/əˈgɛn/",
+    "level": "primary",
+    "freq_rank": 139
+  },
+  {
+    "id": 140,
+    "word": "try",
+    "meaning": "v.试,试图,努力",
+    "phonetic": "/traɪ/",
+    "level": "primary",
+    "freq_rank": 140
+  },
+  {
+    "id": 141,
+    "word": "open",
+    "meaning": "adj.vt.开着的,开口的;开,打开",
+    "phonetic": "/ˈoʊpən/",
+    "level": "primary",
+    "freq_rank": 141
+  },
+  {
+    "id": 142,
+    "word": "meet",
+    "meaning": "vt.遇见,见到",
+    "phonetic": "/mit/",
+    "level": "primary",
+    "freq_rank": 142
+  },
+  {
+    "id": 143,
+    "word": "school",
+    "meaning": "n.学校",
+    "phonetic": "/skul/",
+    "level": "primary",
+    "freq_rank": 143
+  },
+  {
+    "id": 144,
+    "word": "schoolbag",
+    "meaning": "n.书包",
+    "phonetic": "/schoolbag*/",
+    "level": "primary",
+    "freq_rank": 144
+  },
+  {
+    "id": 145,
+    "word": "turn",
+    "meaning": "v.n.旋转,翻转,转变,转弯n．轮流,(轮流的)顺序",
+    "phonetic": "/tərn/",
+    "level": "primary",
+    "freq_rank": 145
+  },
+  {
+    "id": 146,
+    "word": "party",
+    "meaning": "n.聚会,晚会;党派",
+    "phonetic": "/ˈpɑrti/",
+    "level": "primary",
+    "freq_rank": 146
+  },
+  {
+    "id": 147,
+    "word": "run",
+    "meaning": "vi.跑,奔跑;(颜色)褪色",
+    "phonetic": "/rən/",
+    "level": "primary",
+    "freq_rank": 147
+  },
+  {
+    "id": 148,
+    "word": "never",
+    "meaning": "adv.决不,从来没有",
+    "phonetic": "/ˈnɛvər/",
+    "level": "primary",
+    "freq_rank": 148
+  },
+  {
+    "id": 149,
+    "word": "small",
+    "meaning": "adj.小的,少的",
+    "phonetic": "/smɔl/",
+    "level": "primary",
+    "freq_rank": 149
+  },
+  {
+    "id": 150,
+    "word": "live",
+    "meaning": "vi.生活;居住;活着",
+    "phonetic": "/lɪv/",
+    "level": "primary",
+    "freq_rank": 150
+  },
+  {
+    "id": 151,
+    "word": "early",
+    "meaning": "adj.adv.早的;早地",
+    "phonetic": "/ˈərli/",
+    "level": "primary",
+    "freq_rank": 151
+  },
+  {
+    "id": 152,
+    "word": "keep",
+    "meaning": "v.保持;保存;继续不断",
+    "phonetic": "/kip/",
+    "level": "primary",
+    "freq_rank": 152
+  },
+  {
+    "id": 153,
+    "word": "week",
+    "meaning": "n.星期,周",
+    "phonetic": "/wik/",
+    "level": "primary",
+    "freq_rank": 153
+  },
+  {
+    "id": 154,
+    "word": "begin",
+    "meaning": "v.开始,着手",
+    "phonetic": "/bɪˈgɪn/",
+    "level": "primary",
+    "freq_rank": 154
+  },
+  {
+    "id": 155,
+    "word": "head",
+    "meaning": "n.头;头脑(像);才智;首脑;源头;标题",
+    "phonetic": "/hɛd/",
+    "level": "primary",
+    "freq_rank": 155
+  },
+  {
+    "id": 156,
+    "word": "win",
+    "meaning": "v.获胜,赢得",
+    "phonetic": "/wɪn/",
+    "level": "primary",
+    "freq_rank": 156
+  },
+  {
+    "id": 157,
+    "word": "why",
+    "meaning": "adv.为什么",
+    "phonetic": "/waɪ/",
+    "level": "primary",
+    "freq_rank": 157
+  },
+  {
+    "id": 158,
+    "word": "face",
+    "meaning": "n.vt.脸;;面向;面对",
+    "phonetic": "/feɪs/",
+    "level": "primary",
+    "freq_rank": 158
+  },
+  {
+    "id": 159,
+    "word": "left",
+    "meaning": "adj.n.左边的;左;左边",
+    "phonetic": "/lɛft/",
+    "level": "primary",
+    "freq_rank": 159
+  },
+  {
+    "id": 160,
+    "word": "next",
+    "meaning": "adj. adv.最近的;紧挨着的下一次;下一步",
+    "phonetic": "/nɛkst/",
+    "level": "primary",
+    "freq_rank": 160
+  },
+  {
+    "id": 161,
+    "word": "read",
+    "meaning": "v.读;朗读",
+    "phonetic": "/rɛd/",
+    "level": "primary",
+    "freq_rank": 161
+  },
+  {
+    "id": 162,
+    "word": "word",
+    "meaning": "n.词,单词,话",
+    "phonetic": "/wərd/",
+    "level": "primary",
+    "freq_rank": 162
+  },
+  {
+    "id": 163,
+    "word": "always",
+    "meaning": "adv.总是;一直;永远",
+    "phonetic": "/ˈɔlˌweɪz/",
+    "level": "primary",
+    "freq_rank": 163
+  },
+  {
+    "id": 164,
+    "word": "question",
+    "meaning": "n.问题",
+    "phonetic": "/kˈwɛʃən/",
+    "level": "primary",
+    "freq_rank": 164
+  },
+  {
+    "id": 165,
+    "word": "careful",
+    "meaning": "adj.小心的;仔细的;谨慎的",
+    "phonetic": "/ˈkɛrfəl/",
+    "level": "primary",
+    "freq_rank": 165
+  },
+  {
+    "id": 166,
+    "word": "supermarket",
+    "meaning": "n.超级市场",
+    "phonetic": "/ˈsupərˌmɑrkɪt/",
+    "level": "primary",
+    "freq_rank": 166
+  },
+  {
+    "id": 167,
+    "word": "month",
+    "meaning": "n.月,月份",
+    "phonetic": "/mənθ/",
+    "level": "primary",
+    "freq_rank": 167
+  },
+  {
+    "id": 168,
+    "word": "bring",
+    "meaning": "vt.拿来,带来,取来",
+    "phonetic": "/brɪŋ/",
+    "level": "primary",
+    "freq_rank": 168
+  },
+  {
+    "id": 169,
+    "word": "family",
+    "meaning": "n.家庭",
+    "phonetic": "/ˈfæməli/",
+    "level": "primary",
+    "freq_rank": 169
+  },
+  {
+    "id": 170,
+    "word": "name",
+    "meaning": "n.名字,姓名,名称",
+    "phonetic": "/neɪm/",
+    "level": "primary",
+    "freq_rank": 170
+  },
+  {
+    "id": 171,
+    "word": "study",
+    "meaning": "v.n.学习;研究;书房",
+    "phonetic": "/ˈstədi/",
+    "level": "primary",
+    "freq_rank": 171
+  },
+  {
+    "id": 172,
+    "word": "far",
+    "meaning": "adj.&adv.远的;远地",
+    "phonetic": "/fɑr/",
+    "level": "primary",
+    "freq_rank": 172
+  },
+  {
+    "id": 173,
+    "word": "young",
+    "meaning": "adj.年轻的",
+    "phonetic": "/jəŋ/",
+    "level": "primary",
+    "freq_rank": 173
+  },
+  {
+    "id": 174,
+    "word": "street",
+    "meaning": "n.街,街道",
+    "phonetic": "/strit/",
+    "level": "primary",
+    "freq_rank": 174
+  },
+  {
+    "id": 175,
+    "word": "talk",
+    "meaning": "n.&v.谈话,讲话,演讲;交谈",
+    "phonetic": "/tɔk/",
+    "level": "primary",
+    "freq_rank": 175
+  },
+  {
+    "id": 176,
+    "word": "water",
+    "meaning": "n.水",
+    "phonetic": "/ˈwɔtər/",
+    "level": "primary",
+    "freq_rank": 176
+  },
+  {
+    "id": 177,
+    "word": "eye",
+    "meaning": "n.眼睛",
+    "phonetic": "/aɪ/",
+    "level": "primary",
+    "freq_rank": 177
+  },
+  {
+    "id": 178,
+    "word": "book",
+    "meaning": "n.书;本子",
+    "phonetic": "/bʊk/",
+    "level": "primary",
+    "freq_rank": 178
+  },
+  {
+    "id": 179,
+    "word": "night",
+    "meaning": "n.夜;夜间",
+    "phonetic": "/naɪt/",
+    "level": "primary",
+    "freq_rank": 179
+  },
+  {
+    "id": 180,
+    "word": "hear",
+    "meaning": "v.听见;听说,得知",
+    "phonetic": "/hir/",
+    "level": "primary",
+    "freq_rank": 180
+  },
+  {
+    "id": 181,
+    "word": "speak",
+    "meaning": "v.说,讲;谈话;发言",
+    "phonetic": "/spik/",
+    "level": "primary",
+    "freq_rank": 181
+  },
+  {
+    "id": 182,
+    "word": "friend",
+    "meaning": "n.朋友",
+    "phonetic": "/frɛnd/",
+    "level": "primary",
+    "freq_rank": 182
+  },
+  {
+    "id": 183,
+    "word": "train",
+    "meaning": "n.v.火车;培训,训练",
+    "phonetic": "/treɪn/",
+    "level": "primary",
+    "freq_rank": 183
+  },
+  {
+    "id": 184,
+    "word": "half",
+    "meaning": "adj.& n.半,一半,半个",
+    "phonetic": "/hæf/",
+    "level": "primary",
+    "freq_rank": 184
+  },
+  {
+    "id": 185,
+    "word": "near",
+    "meaning": "adj.近的",
+    "phonetic": "/nɪr/",
+    "level": "primary",
+    "freq_rank": 185
+  },
+  {
+    "id": 186,
+    "word": "money",
+    "meaning": "n.钱;货币",
+    "phonetic": "/ˈməni/",
+    "level": "primary",
+    "freq_rank": 186
+  },
+  {
+    "id": 187,
+    "word": "stand",
+    "meaning": "v.站;立;起立;坐落",
+    "phonetic": "/stænd/",
+    "level": "primary",
+    "freq_rank": 187
+  },
+  {
+    "id": 188,
+    "word": "room",
+    "meaning": "n.房间,室;空间;地方",
+    "phonetic": "/rum/",
+    "level": "primary",
+    "freq_rank": 188
+  },
+  {
+    "id": 189,
+    "word": "often",
+    "meaning": "adv.经常,常常",
+    "phonetic": "/ˈɔfən/",
+    "level": "primary",
+    "freq_rank": 189
+  },
+  {
+    "id": 190,
+    "word": "teacher",
+    "meaning": "n.教师,教员",
+    "phonetic": "/ˈtiʧər/",
+    "level": "primary",
+    "freq_rank": 190
+  },
+  {
+    "id": 191,
+    "word": "let",
+    "meaning": "vt.让",
+    "phonetic": "/lɛt/",
+    "level": "primary",
+    "freq_rank": 191
+  },
+  {
+    "id": 192,
+    "word": "best",
+    "meaning": "adj.最好的; 最出色的",
+    "phonetic": "/bɛst/",
+    "level": "primary",
+    "freq_rank": 192
+  },
+  {
+    "id": 193,
+    "word": "car",
+    "meaning": "n.汽车;小卧车",
+    "phonetic": "/kɑr/",
+    "level": "primary",
+    "freq_rank": 193
+  },
+  {
+    "id": 194,
+    "word": "difficult",
+    "meaning": "adj.难的;艰难的;不易相处的",
+    "phonetic": "/ˈdɪfəkəlt/",
+    "level": "primary",
+    "freq_rank": 194
+  },
+  {
+    "id": 195,
+    "word": "love",
+    "meaning": "n.&vt.爱;热爱;很喜欢",
+    "phonetic": "/ləv/",
+    "level": "primary",
+    "freq_rank": 195
+  },
+  {
+    "id": 196,
+    "word": "big",
+    "meaning": "adj.大的",
+    "phonetic": "/bɪg/",
+    "level": "primary",
+    "freq_rank": 196
+  },
+  {
+    "id": 197,
+    "word": "free",
+    "meaning": "adj.自由的,空闲的;免费的",
+    "phonetic": "/fri/",
+    "level": "primary",
+    "freq_rank": 197
+  },
+  {
+    "id": 198,
+    "word": "light",
+    "meaning": "n.vt.adj.光,光亮;灯,灯光;点燃;明亮的;轻的;浅色的",
+    "phonetic": "/laɪt/",
+    "level": "primary",
+    "freq_rank": 198
+  },
+  {
+    "id": 199,
+    "word": "body",
+    "meaning": "n.身体",
+    "phonetic": "/ˈbɑdi/",
+    "level": "primary",
+    "freq_rank": 199
+  },
+  {
+    "id": 200,
+    "word": "age",
+    "meaning": "n.年龄;时代",
+    "phonetic": "/eɪʤ/",
+    "level": "primary",
+    "freq_rank": 200
+  },
+  {
+    "id": 201,
+    "word": "close",
+    "meaning": "vt.关,关闭",
+    "phonetic": "/kloʊz/",
+    "level": "primary",
+    "freq_rank": 201
+  },
+  {
+    "id": 202,
+    "word": "job",
+    "meaning": "n.(一份)工作",
+    "phonetic": "/ʤɑb/",
+    "level": "primary",
+    "freq_rank": 202
+  },
+  {
+    "id": 203,
+    "word": "hour",
+    "meaning": "n.小时",
+    "phonetic": "/aʊər/",
+    "level": "primary",
+    "freq_rank": 203
+  },
+  {
+    "id": 204,
+    "word": "lot",
+    "meaning": "n.许多,好些",
+    "phonetic": "/lɔt/",
+    "level": "primary",
+    "freq_rank": 204
+  },
+  {
+    "id": 205,
+    "word": "driver",
+    "meaning": "n.司机,驾驶员",
+    "phonetic": "/ˈdraɪvər/",
+    "level": "primary",
+    "freq_rank": 205
+  },
+  {
+    "id": 206,
+    "word": "idea",
+    "meaning": "n.主意,意见,打算,想法",
+    "phonetic": "/aɪˈdiə/",
+    "level": "primary",
+    "freq_rank": 206
+  },
+  {
+    "id": 207,
+    "word": "buy",
+    "meaning": "vt.买",
+    "phonetic": "/baɪ/",
+    "level": "primary",
+    "freq_rank": 207
+  },
+  {
+    "id": 208,
+    "word": "door",
+    "meaning": "n.门",
+    "phonetic": "/dɔr/",
+    "level": "primary",
+    "freq_rank": 208
+  },
+  {
+    "id": 209,
+    "word": "subject",
+    "meaning": "n.题目;主题;学科;主语",
+    "phonetic": "/ˈsəbʤɪkt/",
+    "level": "primary",
+    "freq_rank": 209
+  },
+  {
+    "id": 210,
+    "word": "easy",
+    "meaning": "adj.容易的;不费力的",
+    "phonetic": "/ˈizi/",
+    "level": "primary",
+    "freq_rank": 210
+  },
+  {
+    "id": 211,
+    "word": "art",
+    "meaning": "n.艺术,美术;技艺",
+    "phonetic": "/ɑrt/",
+    "level": "primary",
+    "freq_rank": 211
+  },
+  {
+    "id": 212,
+    "word": "sure",
+    "meaning": "adj.确信,肯定口",
+    "phonetic": "/ʃʊr/",
+    "level": "primary",
+    "freq_rank": 212
+  },
+  {
+    "id": 213,
+    "word": "sit",
+    "meaning": "vi.坐",
+    "phonetic": "/sɪt/",
+    "level": "primary",
+    "freq_rank": 213
+  },
+  {
+    "id": 214,
+    "word": "walk",
+    "meaning": "v.&n.步行,散步",
+    "phonetic": "/wɔk/",
+    "level": "primary",
+    "freq_rank": 214
+  },
+  {
+    "id": 215,
+    "word": "class",
+    "meaning": "n.(学校里的)班;年级;课",
+    "phonetic": "/klæs/",
+    "level": "primary",
+    "freq_rank": 215
+  },
+  {
+    "id": 216,
+    "word": "classroom",
+    "meaning": "n.教室",
+    "phonetic": "/ˈklæsˌrum/",
+    "level": "primary",
+    "freq_rank": 216
+  },
+  {
+    "id": 217,
+    "word": "top",
+    "meaning": "n.顶部,(物体的)上面",
+    "phonetic": "/tɔp/",
+    "level": "primary",
+    "freq_rank": 217
+  },
+  {
+    "id": 218,
+    "word": "visit",
+    "meaning": "n.&vt.参观,访问,拜访",
+    "phonetic": "/ˈvɪzɪt/",
+    "level": "primary",
+    "freq_rank": 218
+  },
+  {
+    "id": 219,
+    "word": "share",
+    "meaning": "vt.分享;共同使用",
+    "phonetic": "/ʃɛr/",
+    "level": "primary",
+    "freq_rank": 219
+  },
+  {
+    "id": 220,
+    "word": "minute",
+    "meaning": "n.分钟;一会儿,瞬间",
+    "phonetic": "/ˈmɪnət/",
+    "level": "primary",
+    "freq_rank": 220
+  },
+  {
+    "id": 221,
+    "word": "draw",
+    "meaning": "v.绘画;绘制;拉,拖;提取(金钱)",
+    "phonetic": "/drɔ/",
+    "level": "primary",
+    "freq_rank": 221
+  },
+  {
+    "id": 222,
+    "word": "hard",
+    "meaning": "adv.adj.努力地;硬的;困难的;艰难的",
+    "phonetic": "/hɑrd/",
+    "level": "primary",
+    "freq_rank": 222
+  },
+  {
+    "id": 223,
+    "word": "healthy",
+    "meaning": "adj.健康的;健壮的",
+    "phonetic": "/ˈhɛlθi/",
+    "level": "primary",
+    "freq_rank": 223
+  },
+  {
+    "id": 224,
+    "word": "mother (mum AmE mom)",
+    "meaning": "n.母亲",
+    "phonetic": "/ˈməðər (məm eɪm mɑm)/",
+    "level": "primary",
+    "freq_rank": 224
+  },
+  {
+    "id": 225,
+    "word": "short",
+    "meaning": "adj.短的;矮的",
+    "phonetic": "/ʃɔrt/",
+    "level": "primary",
+    "freq_rank": 225
+  },
+  {
+    "id": 226,
+    "word": "kind",
+    "meaning": "n.adj.种类．善良的;友好的",
+    "phonetic": "/kaɪnd/",
+    "level": "primary",
+    "freq_rank": 226
+  },
+  {
+    "id": 227,
+    "word": "police",
+    "meaning": "n.警察,警务人员",
+    "phonetic": "/pəˈlis/",
+    "level": "primary",
+    "freq_rank": 227
+  },
+  {
+    "id": 228,
+    "word": "cut",
+    "meaning": "v.切,剪,削,割",
+    "phonetic": "/kət/",
+    "level": "primary",
+    "freq_rank": 228
+  },
+  {
+    "id": 229,
+    "word": "stop",
+    "meaning": "n.v.忍．停;(停车)站;停,停止,阻止",
+    "phonetic": "/stɑp/",
+    "level": "primary",
+    "freq_rank": 229
+  },
+  {
+    "id": 230,
+    "word": "ruler",
+    "meaning": "n.统治者;直尺",
+    "phonetic": "/ˈrulər/",
+    "level": "primary",
+    "freq_rank": 230
+  },
+  {
+    "id": 231,
+    "word": "city",
+    "meaning": "n.市,城市,都市",
+    "phonetic": "/ˈsɪti/",
+    "level": "primary",
+    "freq_rank": 231
+  },
+  {
+    "id": 232,
+    "word": "black",
+    "meaning": "n.黑色",
+    "phonetic": "/blæk/",
+    "level": "primary",
+    "freq_rank": 232
+  },
+  {
+    "id": 233,
+    "word": "doctor",
+    "meaning": "n.医生,大夫;博士",
+    "phonetic": "/ˈdɔktər/",
+    "level": "primary",
+    "freq_rank": 233
+  },
+  {
+    "id": 234,
+    "word": "white",
+    "meaning": "adj.n.白色的;白色",
+    "phonetic": "/waɪt/",
+    "level": "primary",
+    "freq_rank": 234
+  },
+  {
+    "id": 235,
+    "word": "learn",
+    "meaning": "vt.学,学习,学会",
+    "phonetic": "/lərn/",
+    "level": "primary",
+    "freq_rank": 235
+  },
+  {
+    "id": 236,
+    "word": "sell",
+    "meaning": "v.卖,售",
+    "phonetic": "/sɛl/",
+    "level": "primary",
+    "freq_rank": 236
+  },
+  {
+    "id": 237,
+    "word": "today",
+    "meaning": "adv.&n.今天;现在,当前",
+    "phonetic": "/təˈdeɪ/",
+    "level": "primary",
+    "freq_rank": 237
+  },
+  {
+    "id": 238,
+    "word": "foot (pl. feet)",
+    "meaning": "n.足,脚;英尺",
+    "phonetic": "/fʊt (pl*. fit)/",
+    "level": "primary",
+    "freq_rank": 238
+  },
+  {
+    "id": 239,
+    "word": "strong",
+    "meaning": "adj.强(壮)的;坚固的;强烈的;坚强的",
+    "phonetic": "/strɔŋ/",
+    "level": "primary",
+    "freq_rank": 239
+  },
+  {
+    "id": 240,
+    "word": "father (dad)",
+    "meaning": "n.父亲",
+    "phonetic": "/ˈfɑðər (dæd)/",
+    "level": "primary",
+    "freq_rank": 240
+  },
+  {
+    "id": 241,
+    "word": "science",
+    "meaning": "n.科学,自然科学",
+    "phonetic": "/saɪəns/",
+    "level": "primary",
+    "freq_rank": 241
+  },
+  {
+    "id": 242,
+    "word": "girl",
+    "meaning": "n.女孩",
+    "phonetic": "/gərl/",
+    "level": "primary",
+    "freq_rank": 242
+  },
+  {
+    "id": 243,
+    "word": "front",
+    "meaning": "adj.& n.前面的;前部的;前面;前部",
+    "phonetic": "/frənt/",
+    "level": "primary",
+    "freq_rank": 243
+  },
+  {
+    "id": 244,
+    "word": "paper",
+    "meaning": "n.纸;报纸",
+    "phonetic": "/ˈpeɪpər/",
+    "level": "primary",
+    "freq_rank": 244
+  },
+  {
+    "id": 245,
+    "word": "answer",
+    "meaning": "n.v.回答,答案;回信(作出)答案",
+    "phonetic": "/ˈænsər/",
+    "level": "primary",
+    "freq_rank": 245
+  },
+  {
+    "id": 246,
+    "word": "table",
+    "meaning": "n.桌子,表格",
+    "phonetic": "/ˈteɪbəl/",
+    "level": "primary",
+    "freq_rank": 246
+  },
+  {
+    "id": 247,
+    "word": "watch",
+    "meaning": "vt.n.观看,注视;当心,注意;手表,表",
+    "phonetic": "/wɔʧ/",
+    "level": "primary",
+    "freq_rank": 247
+  },
+  {
+    "id": 248,
+    "word": "behind",
+    "meaning": "prep.&adv.(表示位置)在……后面;在后面",
+    "phonetic": "/bɪˈhaɪnd/",
+    "level": "primary",
+    "freq_rank": 248
+  },
+  {
+    "id": 249,
+    "word": "student",
+    "meaning": "n.学生",
+    "phonetic": "/ˈstudənt/",
+    "level": "primary",
+    "freq_rank": 249
+  },
+  {
+    "id": 250,
+    "word": "computer",
+    "meaning": "n.电子计算机",
+    "phonetic": "/kəmˈpjutər/",
+    "level": "primary",
+    "freq_rank": 250
+  },
+  {
+    "id": 251,
+    "word": "colour (AmE color)",
+    "meaning": "n.&vt.颜色;给……着色,涂色",
+    "phonetic": "/ˈkələr (eɪm ˈkələr)/",
+    "level": "primary",
+    "freq_rank": 251
+  },
+  {
+    "id": 252,
+    "word": "parent",
+    "meaning": "n.父(母),双亲",
+    "phonetic": "/ˈpɛrənt/",
+    "level": "primary",
+    "freq_rank": 252
+  },
+  {
+    "id": 253,
+    "word": "wait",
+    "meaning": "vi.等,等候",
+    "phonetic": "/weɪt/",
+    "level": "primary",
+    "freq_rank": 253
+  },
+  {
+    "id": 254,
+    "word": "letter",
+    "meaning": "n.信;字母",
+    "phonetic": "/ˈlɛtər/",
+    "level": "primary",
+    "freq_rank": 254
+  },
+  {
+    "id": 255,
+    "word": "boy",
+    "meaning": "n.男孩",
+    "phonetic": "/bɔɪ/",
+    "level": "primary",
+    "freq_rank": 255
+  },
+  {
+    "id": 256,
+    "word": "morning",
+    "meaning": "n.早晨,上午",
+    "phonetic": "/ˈmɔrnɪŋ/",
+    "level": "primary",
+    "freq_rank": 256
+  },
+  {
+    "id": 257,
+    "word": "food",
+    "meaning": "n.食物,食品",
+    "phonetic": "/fud/",
+    "level": "primary",
+    "freq_rank": 257
+  },
+  {
+    "id": 258,
+    "word": "game",
+    "meaning": "n.游戏;运动;比赛",
+    "phonetic": "/geɪm/",
+    "level": "primary",
+    "freq_rank": 258
+  },
+  {
+    "id": 259,
+    "word": "air",
+    "meaning": "n.空气;大气",
+    "phonetic": "/ɛr/",
+    "level": "primary",
+    "freq_rank": 259
+  },
+  {
+    "id": 260,
+    "word": "phone",
+    "meaning": "v.n.打电话;电话,电话机",
+    "phonetic": "/foʊn/",
+    "level": "primary",
+    "freq_rank": 260
+  },
+  {
+    "id": 261,
+    "word": "shop",
+    "meaning": "vi.n.买东西;商店;车间",
+    "phonetic": "/ʃɑp/",
+    "level": "primary",
+    "freq_rank": 261
+  },
+  {
+    "id": 262,
+    "word": "music",
+    "meaning": "n.音乐; 乐曲",
+    "phonetic": "/mˈjuzɪk/",
+    "level": "primary",
+    "freq_rank": 262
+  },
+  {
+    "id": 263,
+    "word": "thank",
+    "meaning": "vt.n.(pl.)感谢,致谢,道谢;感谢,谢意",
+    "phonetic": "/θæŋk/",
+    "level": "primary",
+    "freq_rank": 263
+  },
+  {
+    "id": 264,
+    "word": "arm",
+    "meaning": "n.臂,支架",
+    "phonetic": "/ɑrm/",
+    "level": "primary",
+    "freq_rank": 264
+  },
+  {
+    "id": 265,
+    "word": "bad",
+    "meaning": "adj.坏的;有害的",
+    "phonetic": "/bæd/",
+    "level": "primary",
+    "freq_rank": 265
+  },
+  {
+    "id": 266,
+    "word": "please",
+    "meaning": "v.请;使人高兴,使人满意",
+    "phonetic": "/pliz/",
+    "level": "primary",
+    "freq_rank": 266
+  },
+  {
+    "id": 267,
+    "word": "wish",
+    "meaning": "n.vt.愿望,祝愿;希望,想要,祝愿",
+    "phonetic": "/wɪʃ/",
+    "level": "primary",
+    "freq_rank": 267
+  },
+  {
+    "id": 268,
+    "word": "ago",
+    "meaning": "adv.以前",
+    "phonetic": "/əˈgoʊ/",
+    "level": "primary",
+    "freq_rank": 268
+  },
+  {
+    "id": 269,
+    "word": "yesterday",
+    "meaning": "n.&adv.昨天",
+    "phonetic": "/ˈjɛstərˌdeɪ/",
+    "level": "primary",
+    "freq_rank": 269
+  },
+  {
+    "id": 270,
+    "word": "blackboard",
+    "meaning": "n.黑板;",
+    "phonetic": "/ˈblækˌbɔrd/",
+    "level": "primary",
+    "freq_rank": 270
+  },
+  {
+    "id": 271,
+    "word": "window",
+    "meaning": "n.窗户",
+    "phonetic": "/ˈwɪndoʊ/",
+    "level": "primary",
+    "freq_rank": 271
+  },
+  {
+    "id": 272,
+    "word": "wonderful",
+    "meaning": "adj.美妙的,精彩的,了不起的,太好了",
+    "phonetic": "/ˈwəndərfəl/",
+    "level": "primary",
+    "freq_rank": 272
+  },
+  {
+    "id": 273,
+    "word": "safe",
+    "meaning": "adj.安全的",
+    "phonetic": "/seɪf/",
+    "level": "primary",
+    "freq_rank": 273
+  },
+  {
+    "id": 274,
+    "word": "fire",
+    "meaning": "n.火;火炉;火灾",
+    "phonetic": "/faɪər/",
+    "level": "primary",
+    "freq_rank": 274
+  },
+  {
+    "id": 275,
+    "word": "farm",
+    "meaning": "n.农场;农庄",
+    "phonetic": "/fɑrm/",
+    "level": "primary",
+    "freq_rank": 275
+  },
+  {
+    "id": 276,
+    "word": "farmer",
+    "meaning": "n.农民",
+    "phonetic": "/ˈfɑrmər/",
+    "level": "primary",
+    "freq_rank": 276
+  },
+  {
+    "id": 277,
+    "word": "plant",
+    "meaning": "vt.n.种植,播种;植物",
+    "phonetic": "/plænt/",
+    "level": "primary",
+    "freq_rank": 277
+  },
+  {
+    "id": 278,
+    "word": "happy",
+    "meaning": "adj.幸福的;快乐的,高兴的",
+    "phonetic": "/ˈhæpi/",
+    "level": "primary",
+    "freq_rank": 278
+  },
+  {
+    "id": 279,
+    "word": "bed",
+    "meaning": "n.床",
+    "phonetic": "/bɛd/",
+    "level": "primary",
+    "freq_rank": 279
+  },
+  {
+    "id": 280,
+    "word": "wall",
+    "meaning": "n.墙",
+    "phonetic": "/wɔl/",
+    "level": "primary",
+    "freq_rank": 280
+  },
+  {
+    "id": 281,
+    "word": "story",
+    "meaning": "n.故事,小说",
+    "phonetic": "/ˈstɔri/",
+    "level": "primary",
+    "freq_rank": 281
+  },
+  {
+    "id": 282,
+    "word": "TV (=television)",
+    "meaning": "n.电视,电视机",
+    "phonetic": "/ˌtɛləˈvɪʒən (=ˈtɛləˌvɪʒən)/",
+    "level": "primary",
+    "freq_rank": 282
+  },
+  {
+    "id": 283,
+    "word": "hospital",
+    "meaning": "n.医院",
+    "phonetic": "/ˈhɑˌspɪtəl/",
+    "level": "primary",
+    "freq_rank": 283
+  },
+  {
+    "id": 284,
+    "word": "drink",
+    "meaning": "v.喝,饮",
+    "phonetic": "/drɪŋk/",
+    "level": "primary",
+    "freq_rank": 284
+  },
+  {
+    "id": 285,
+    "word": "red",
+    "meaning": "n.adj.红色;红色的",
+    "phonetic": "/rɛd/",
+    "level": "primary",
+    "freq_rank": 285
+  },
+  {
+    "id": 286,
+    "word": "picture",
+    "meaning": "n.图片,画片,照片",
+    "phonetic": "/ˈpɪkʧər/",
+    "level": "primary",
+    "freq_rank": 286
+  },
+  {
+    "id": 287,
+    "word": "garden",
+    "meaning": "n.花园,果园,菜园",
+    "phonetic": "/ˈgɑrdən/",
+    "level": "primary",
+    "freq_rank": 287
+  },
+  {
+    "id": 288,
+    "word": "wrong",
+    "meaning": "adj.错误的,不正常的,有毛病的",
+    "phonetic": "/rɔŋ/",
+    "level": "primary",
+    "freq_rank": 288
+  },
+  {
+    "id": 289,
+    "word": "green",
+    "meaning": "adj.n.绿色的;青的;绿色",
+    "phonetic": "/grin/",
+    "level": "primary",
+    "freq_rank": 289
+  },
+  {
+    "id": 290,
+    "word": "fine",
+    "meaning": "adj.细的;晴朗的;美好的;(身体)健康的",
+    "phonetic": "/faɪn/",
+    "level": "primary",
+    "freq_rank": 290
+  },
+  {
+    "id": 291,
+    "word": "travel",
+    "meaning": "n.&vi.旅行",
+    "phonetic": "/ˈtrævəl/",
+    "level": "primary",
+    "freq_rank": 291
+  },
+  {
+    "id": 292,
+    "word": "space",
+    "meaning": "n.空间",
+    "phonetic": "/speɪs/",
+    "level": "primary",
+    "freq_rank": 292
+  },
+  {
+    "id": 293,
+    "word": "slow",
+    "meaning": "adv.慢慢地,缓慢地",
+    "phonetic": "/sloʊ/",
+    "level": "primary",
+    "freq_rank": 293
+  },
+  {
+    "id": 294,
+    "word": "fish",
+    "meaning": "n.鱼;鱼肉",
+    "phonetic": "/fɪʃ/",
+    "level": "primary",
+    "freq_rank": 294
+  },
+  {
+    "id": 295,
+    "word": "hair",
+    "meaning": "n.头发",
+    "phonetic": "/hɛr/",
+    "level": "primary",
+    "freq_rank": 295
+  },
+  {
+    "id": 296,
+    "word": "wear",
+    "meaning": "v.穿,戴",
+    "phonetic": "/wɛr/",
+    "level": "primary",
+    "freq_rank": 296
+  },
+  {
+    "id": 297,
+    "word": "eat",
+    "meaning": "v.吃",
+    "phonetic": "/it/",
+    "level": "primary",
+    "freq_rank": 297
+  },
+  {
+    "id": 298,
+    "word": "park",
+    "meaning": "n.vt.公园;停放(汽车)",
+    "phonetic": "/pɑrk/",
+    "level": "primary",
+    "freq_rank": 298
+  },
+  {
+    "id": 299,
+    "word": "catch",
+    "meaning": "v.接住;捉住;赶上;染上(疾病)",
+    "phonetic": "/kæʧ/",
+    "level": "primary",
+    "freq_rank": 299
+  },
+  {
+    "id": 300,
+    "word": "middle",
+    "meaning": "adj.& n.中间;当中;中级",
+    "phonetic": "/ˈmɪdəl/",
+    "level": "primary",
+    "freq_rank": 300
+  },
+  {
+    "id": 301,
+    "word": "sun",
+    "meaning": "n.太阳,阳光",
+    "phonetic": "/sən/",
+    "level": "primary",
+    "freq_rank": 301
+  },
+  {
+    "id": 302,
+    "word": "sunny",
+    "meaning": "adj.晴朗的;阳光充足的",
+    "phonetic": "/ˈsəni/",
+    "level": "primary",
+    "freq_rank": 302
+  },
+  {
+    "id": 303,
+    "word": "animal",
+    "meaning": "n.动物",
+    "phonetic": "/ˈænəməl/",
+    "level": "primary",
+    "freq_rank": 303
+  },
+  {
+    "id": 304,
+    "word": "film",
+    "meaning": "num.电影;影片;胶卷",
+    "phonetic": "/fɪlm/",
+    "level": "primary",
+    "freq_rank": 304
+  },
+  {
+    "id": 305,
+    "word": "sea",
+    "meaning": "n.海,海洋",
+    "phonetic": "/si/",
+    "level": "primary",
+    "freq_rank": 305
+  },
+  {
+    "id": 306,
+    "word": "tree",
+    "meaning": "n.树",
+    "phonetic": "/tri/",
+    "level": "primary",
+    "freq_rank": 306
+  },
+  {
+    "id": 307,
+    "word": "OK",
+    "meaning": "adv.(口语)好,对,不错",
+    "phonetic": "/ˈoʊˈkeɪ/",
+    "level": "primary",
+    "freq_rank": 307
+  },
+  {
+    "id": 308,
+    "word": "heavy",
+    "meaning": "adj.重的",
+    "phonetic": "/ˈhɛvi/",
+    "level": "primary",
+    "freq_rank": 308
+  },
+  {
+    "id": 309,
+    "word": "evening",
+    "meaning": "n.傍晚,晚上",
+    "phonetic": "/ˈivnɪŋ/",
+    "level": "primary",
+    "freq_rank": 309
+  },
+  {
+    "id": 310,
+    "word": "bear",
+    "meaning": "n.熊",
+    "phonetic": "/bɛr/",
+    "level": "primary",
+    "freq_rank": 310
+  },
+  {
+    "id": 311,
+    "word": "nice",
+    "meaning": "adj.令人愉快的;好的,漂亮的",
+    "phonetic": "/nis/",
+    "level": "primary",
+    "freq_rank": 311
+  },
+  {
+    "id": 312,
+    "word": "fly",
+    "meaning": "n.飞行;苍蝇",
+    "phonetic": "/flaɪ/",
+    "level": "primary",
+    "freq_rank": 312
+  },
+  {
+    "id": 313,
+    "word": "beautiful",
+    "meaning": "adj.美丽的,美观的",
+    "phonetic": "/ˈbjutəfəl/",
+    "level": "primary",
+    "freq_rank": 313
+  },
+  {
+    "id": 314,
+    "word": "cup",
+    "meaning": "n.茶杯",
+    "phonetic": "/kəp/",
+    "level": "primary",
+    "freq_rank": 314
+  },
+  {
+    "id": 315,
+    "word": "season",
+    "meaning": "n.季;季节",
+    "phonetic": "/ˈsizən/",
+    "level": "primary",
+    "freq_rank": 315
+  },
+  {
+    "id": 316,
+    "word": "cold",
+    "meaning": "adj.&n.冷的,寒的;寒冷;感冒,伤风",
+    "phonetic": "/koʊld/",
+    "level": "primary",
+    "freq_rank": 316
+  },
+  {
+    "id": 317,
+    "word": "listen",
+    "meaning": "vi.听,仔细听",
+    "phonetic": "/ˈlɪsən/",
+    "level": "primary",
+    "freq_rank": 317
+  },
+  {
+    "id": 318,
+    "word": "brother",
+    "meaning": "n.兄;弟",
+    "phonetic": "/ˈbrəðər/",
+    "level": "primary",
+    "freq_rank": 318
+  },
+  {
+    "id": 319,
+    "word": "horse",
+    "meaning": "n.马",
+    "phonetic": "/hɔrs/",
+    "level": "primary",
+    "freq_rank": 319
+  },
+  {
+    "id": 320,
+    "word": "floor",
+    "meaning": "n.地面,地板;(楼房的)层",
+    "phonetic": "/flɔr/",
+    "level": "primary",
+    "freq_rank": 320
+  },
+  {
+    "id": 321,
+    "word": "dog",
+    "meaning": "n.狗",
+    "phonetic": "/dɔg/",
+    "level": "primary",
+    "freq_rank": 321
+  },
+  {
+    "id": 322,
+    "word": "exercise",
+    "meaning": "n.vi.锻炼,做操;练习;锻炼",
+    "phonetic": "/ˈɛksərˌsaɪz/",
+    "level": "primary",
+    "freq_rank": 322
+  },
+  {
+    "id": 323,
+    "word": "sleep",
+    "meaning": "vi.&n.睡觉",
+    "phonetic": "/slip/",
+    "level": "primary",
+    "freq_rank": 323
+  },
+  {
+    "id": 324,
+    "word": "blue",
+    "meaning": "adj.蓝色",
+    "phonetic": "/blu/",
+    "level": "primary",
+    "freq_rank": 324
+  },
+  {
+    "id": 325,
+    "word": "clean",
+    "meaning": "vt.adj.弄干净,擦干净;;清洁的,干净的",
+    "phonetic": "/klin/",
+    "level": "primary",
+    "freq_rank": 325
+  },
+  {
+    "id": 326,
+    "word": "glass",
+    "meaning": "n.玻璃杯;玻璃;(复)眼镜",
+    "phonetic": "/glæs/",
+    "level": "primary",
+    "freq_rank": 326
+  },
+  {
+    "id": 327,
+    "word": "photo (=photograph)",
+    "meaning": "n.照片",
+    "phonetic": "/ˈfoʊˌtoʊ (=ˈfoʊtəˌgræf)/",
+    "level": "primary",
+    "freq_rank": 327
+  },
+  {
+    "id": 328,
+    "word": "worry",
+    "meaning": "v.烦恼,担忧,发怒,困扰",
+    "phonetic": "/ˈwəri/",
+    "level": "primary",
+    "freq_rank": 328
+  },
+  {
+    "id": 329,
+    "word": "dress",
+    "meaning": "n.v.女服,连衣裙;(统指)服装;穿衣;穿着",
+    "phonetic": "/drɛs/",
+    "level": "primary",
+    "freq_rank": 329
+  },
+  {
+    "id": 330,
+    "word": "leg",
+    "meaning": "n.腿;腿脚;支柱",
+    "phonetic": "/lɛg/",
+    "level": "primary",
+    "freq_rank": 330
+  },
+  {
+    "id": 331,
+    "word": "star",
+    "meaning": "n.星,恒星",
+    "phonetic": "/stɑr/",
+    "level": "primary",
+    "freq_rank": 331
+  },
+  {
+    "id": 332,
+    "word": "warm",
+    "meaning": "adj.暖和的,温暖的,热情的",
+    "phonetic": "/wɔrm/",
+    "level": "primary",
+    "freq_rank": 332
+  },
+  {
+    "id": 333,
+    "word": "box",
+    "meaning": "n.盒子,箱子",
+    "phonetic": "/bɑks/",
+    "level": "primary",
+    "freq_rank": 333
+  },
+  {
+    "id": 334,
+    "word": "Miss",
+    "meaning": "n.小姐,女士(称呼未婚妇女)",
+    "phonetic": "/mɪs/",
+    "level": "primary",
+    "freq_rank": 334
+  },
+  {
+    "id": 335,
+    "word": "summer",
+    "meaning": "n.夏天,夏季",
+    "phonetic": "/ˈsəmər/",
+    "level": "primary",
+    "freq_rank": 335
+  },
+  {
+    "id": 336,
+    "word": "fast",
+    "meaning": "adj.adv.快的,迅速的．快地,迅速地",
+    "phonetic": "/fæst/",
+    "level": "primary",
+    "freq_rank": 336
+  },
+  {
+    "id": 337,
+    "word": "library",
+    "meaning": "n.图书馆,图书室",
+    "phonetic": "/ˈlaɪbrɛˌri/",
+    "level": "primary",
+    "freq_rank": 337
+  },
+  {
+    "id": 338,
+    "word": "river",
+    "meaning": "n.江;河;水道;巨流",
+    "phonetic": "/ˈrɪvər/",
+    "level": "primary",
+    "freq_rank": 338
+  },
+  {
+    "id": 339,
+    "word": "PE (=physical education)",
+    "meaning": "n.体育",
+    "phonetic": "/pe* (=ˈfɪzɪkəl ˌɛʤəˈkeɪʃən)/",
+    "level": "primary",
+    "freq_rank": 339
+  },
+  {
+    "id": 340,
+    "word": "baby",
+    "meaning": "n.婴儿",
+    "phonetic": "/ˈbeɪbi/",
+    "level": "primary",
+    "freq_rank": 340
+  },
+  {
+    "id": 341,
+    "word": "ill",
+    "meaning": "adj.有病的;不健康的",
+    "phonetic": "/ɪl/",
+    "level": "primary",
+    "freq_rank": 341
+  },
+  {
+    "id": 342,
+    "word": "sorry",
+    "meaning": "adj.对不起,抱歉;难过的",
+    "phonetic": "/ˈsɑri/",
+    "level": "primary",
+    "freq_rank": 342
+  },
+  {
+    "id": 343,
+    "word": "holiday",
+    "meaning": "n.假日;假期",
+    "phonetic": "/ˈhɑlɪˌdeɪ/",
+    "level": "primary",
+    "freq_rank": 343
+  },
+  {
+    "id": 344,
+    "word": "quiet",
+    "meaning": "adj.安静的,寂静的",
+    "phonetic": "/kwaɪət/",
+    "level": "primary",
+    "freq_rank": 344
+  },
+  {
+    "id": 345,
+    "word": "bird",
+    "meaning": "n.鸟",
+    "phonetic": "/bərd/",
+    "level": "primary",
+    "freq_rank": 345
+  },
+  {
+    "id": 346,
+    "word": "sport",
+    "meaning": "n.体育运动,锻炼;运动会",
+    "phonetic": "/spɔrt/",
+    "level": "primary",
+    "freq_rank": 346
+  },
+  {
+    "id": 347,
+    "word": "mouth",
+    "meaning": "n.嘴,口",
+    "phonetic": "/maʊθ/",
+    "level": "primary",
+    "freq_rank": 347
+  },
+  {
+    "id": 348,
+    "word": "hill",
+    "meaning": "n.小山;丘陵;土堆;斜坡",
+    "phonetic": "/hɪl/",
+    "level": "primary",
+    "freq_rank": 348
+  },
+  {
+    "id": 349,
+    "word": "earth",
+    "meaning": "n.地球;土,泥;大地",
+    "phonetic": "/ərθ/",
+    "level": "primary",
+    "freq_rank": 349
+  },
+  {
+    "id": 350,
+    "word": "welcome",
+    "meaning": "int.n.&v.adj.欢迎;受欢迎的",
+    "phonetic": "/ˈwɛlkəm/",
+    "level": "primary",
+    "freq_rank": 350
+  },
+  {
+    "id": 351,
+    "word": "ship",
+    "meaning": "n.vi．船,轮船用船装运",
+    "phonetic": "/ʃɪp/",
+    "level": "primary",
+    "freq_rank": 351
+  },
+  {
+    "id": 352,
+    "word": "windy",
+    "meaning": "adj.有风的,多风的",
+    "phonetic": "/ˈwɪndi/",
+    "level": "primary",
+    "freq_rank": 352
+  },
+  {
+    "id": 353,
+    "word": "hot",
+    "meaning": "adj.热的",
+    "phonetic": "/hɑt/",
+    "level": "primary",
+    "freq_rank": 353
+  },
+  {
+    "id": 354,
+    "word": "brown",
+    "meaning": "n.adj.褐色,棕色;褐色的,棕色的",
+    "phonetic": "/braʊn/",
+    "level": "primary",
+    "freq_rank": 354
+  },
+  {
+    "id": 355,
+    "word": "dance",
+    "meaning": "n.&vi.跳舞",
+    "phonetic": "/dæns/",
+    "level": "primary",
+    "freq_rank": 355
+  },
+  {
+    "id": 356,
+    "word": "card",
+    "meaning": "n.卡片;名片;纸牌",
+    "phonetic": "/kɑrd/",
+    "level": "primary",
+    "freq_rank": 356
+  },
+  {
+    "id": 357,
+    "word": "clothes",
+    "meaning": "n.衣服;各种衣物",
+    "phonetic": "/kloʊðz/",
+    "level": "primary",
+    "freq_rank": 357
+  },
+  {
+    "id": 358,
+    "word": "sing",
+    "meaning": "v.唱,唱歌",
+    "phonetic": "/sɪŋ/",
+    "level": "primary",
+    "freq_rank": 358
+  },
+  {
+    "id": 359,
+    "word": "sister",
+    "meaning": "n.姐;妹",
+    "phonetic": "/ˈsɪstər/",
+    "level": "primary",
+    "freq_rank": 359
+  },
+  {
+    "id": 360,
+    "word": "chair",
+    "meaning": "n.椅子",
+    "phonetic": "/ʧɛr/",
+    "level": "primary",
+    "freq_rank": 360
+  },
+  {
+    "id": 361,
+    "word": "ball",
+    "meaning": "n.球",
+    "phonetic": "/bɔl/",
+    "level": "primary",
+    "freq_rank": 361
+  },
+  {
+    "id": 362,
+    "word": "cook",
+    "meaning": "n.炊事员,厨师z,．烹调,做饭",
+    "phonetic": "/kʊk/",
+    "level": "primary",
+    "freq_rank": 362
+  },
+  {
+    "id": 363,
+    "word": "dear",
+    "meaning": "adj.亲爱的",
+    "phonetic": "/dɪr/",
+    "level": "primary",
+    "freq_rank": 363
+  },
+  {
+    "id": 364,
+    "word": "nurse",
+    "meaning": "n.护士;保育员",
+    "phonetic": "/nərs/",
+    "level": "primary",
+    "freq_rank": 364
+  },
+  {
+    "id": 365,
+    "word": "tomorrow",
+    "meaning": "adv.&n.明天",
+    "phonetic": "/təˈmɑˌroʊ/",
+    "level": "primary",
+    "freq_rank": 365
+  },
+  {
+    "id": 366,
+    "word": "tea",
+    "meaning": "n.茶;茶叶",
+    "phonetic": "/ti/",
+    "level": "primary",
+    "freq_rank": 366
+  },
+  {
+    "id": 367,
+    "word": "flower",
+    "meaning": "n.花",
+    "phonetic": "/flaʊər/",
+    "level": "primary",
+    "freq_rank": 367
+  },
+  {
+    "id": 368,
+    "word": "excited",
+    "meaning": "vt.使兴奋,使激动",
+    "phonetic": "/ɪkˈsaɪtɪd/",
+    "level": "primary",
+    "freq_rank": 368
+  },
+  {
+    "id": 369,
+    "word": "pair",
+    "meaning": "n.一双,一对",
+    "phonetic": "/pɛr/",
+    "level": "primary",
+    "freq_rank": 369
+  },
+  {
+    "id": 370,
+    "word": "afternoon",
+    "meaning": "n.下午,午后",
+    "phonetic": "/ˌæftərˈnun/",
+    "level": "primary",
+    "freq_rank": 370
+  },
+  {
+    "id": 371,
+    "word": "cry",
+    "meaning": "n.v.叫喊;哭声;喊叫;哭",
+    "phonetic": "/kraɪ/",
+    "level": "primary",
+    "freq_rank": 371
+  },
+  {
+    "id": 372,
+    "word": "kitchen",
+    "meaning": "n.厨房",
+    "phonetic": "/ˈkɪʧən/",
+    "level": "primary",
+    "freq_rank": 372
+  },
+  {
+    "id": 373,
+    "word": "wash",
+    "meaning": "v.洗(涤),冲洗",
+    "phonetic": "/wɑʃ/",
+    "level": "primary",
+    "freq_rank": 373
+  },
+  {
+    "id": 374,
+    "word": "bag",
+    "meaning": "n.书包;袋子",
+    "phonetic": "/bæg/",
+    "level": "primary",
+    "freq_rank": 374
+  },
+  {
+    "id": 375,
+    "word": "spring",
+    "meaning": "n.春天,春季",
+    "phonetic": "/spərɪŋ/",
+    "level": "primary",
+    "freq_rank": 375
+  },
+  {
+    "id": 376,
+    "word": "clock",
+    "meaning": "n.钟",
+    "phonetic": "/klɑk/",
+    "level": "primary",
+    "freq_rank": 376
+  },
+  {
+    "id": 377,
+    "word": "o'clock",
+    "meaning": "adv.(表示整点)…点钟",
+    "phonetic": "/əˈklɑk/",
+    "level": "primary",
+    "freq_rank": 377
+  },
+  {
+    "id": 378,
+    "word": "winter",
+    "meaning": "n.冬天,冬季",
+    "phonetic": "/ˈwɪntər/",
+    "level": "primary",
+    "freq_rank": 378
+  },
+  {
+    "id": 379,
+    "word": "rain",
+    "meaning": "n.vi.雨,雨水;下雨",
+    "phonetic": "/reɪn/",
+    "level": "primary",
+    "freq_rank": 379
+  },
+  {
+    "id": 380,
+    "word": "beside",
+    "meaning": "prep.在…..旁边;靠近",
+    "phonetic": "/ˌbiˈsaɪd/",
+    "level": "primary",
+    "freq_rank": 380
+  },
+  {
+    "id": 381,
+    "word": "boat",
+    "meaning": "n.小船,小舟",
+    "phonetic": "/boʊt/",
+    "level": "primary",
+    "freq_rank": 381
+  },
+  {
+    "id": 382,
+    "word": "football",
+    "meaning": "n.(英式)足球;(美式)橄榄球",
+    "phonetic": "/ˈfʊtˌbɔl/",
+    "level": "primary",
+    "freq_rank": 382
+  },
+  {
+    "id": 383,
+    "word": "hello",
+    "meaning": "Int.喂;你好(用于打招呼、问候)",
+    "phonetic": "/hɛˈloʊ/",
+    "level": "primary",
+    "freq_rank": 383
+  },
+  {
+    "id": 384,
+    "word": "hi",
+    "meaning": "int.嗨",
+    "phonetic": "/haɪ/",
+    "level": "primary",
+    "freq_rank": 384
+  },
+  {
+    "id": 385,
+    "word": "jump",
+    "meaning": "v.跳跃;惊起;猛扑",
+    "phonetic": "/ʤəmp/",
+    "level": "primary",
+    "freq_rank": 385
+  },
+  {
+    "id": 386,
+    "word": "grandfather (grandpa)",
+    "meaning": "n.奶奶;外婆",
+    "phonetic": "/ˈgrænˌfɑðər (ˈgrændˌpɑ)/",
+    "level": "primary",
+    "freq_rank": 386
+  },
+  {
+    "id": 387,
+    "word": "grandmother (grandma)",
+    "meaning": "n.爷爷;外公",
+    "phonetic": "/ˈgrændˌməðər (ˈgrændmɑ)/",
+    "level": "primary",
+    "freq_rank": 387
+  },
+  {
+    "id": 388,
+    "word": "bus",
+    "meaning": "n.公共汽车",
+    "phonetic": "/bəs/",
+    "level": "primary",
+    "freq_rank": 388
+  },
+  {
+    "id": 389,
+    "word": "map",
+    "meaning": "n.地图",
+    "phonetic": "/mæp/",
+    "level": "primary",
+    "freq_rank": 389
+  },
+  {
+    "id": 390,
+    "word": "song",
+    "meaning": "n.歌唱;歌曲",
+    "phonetic": "/sɔŋ/",
+    "level": "primary",
+    "freq_rank": 390
+  },
+  {
+    "id": 391,
+    "word": "weather",
+    "meaning": "n.天气",
+    "phonetic": "/ˈwɛðər/",
+    "level": "primary",
+    "freq_rank": 391
+  },
+  {
+    "id": 392,
+    "word": "famous",
+    "meaning": "adj.著名的",
+    "phonetic": "/ˈfeɪməs/",
+    "level": "primary",
+    "freq_rank": 392
+  },
+  {
+    "id": 393,
+    "word": "thin",
+    "meaning": "adj.薄的;瘦的;稀的",
+    "phonetic": "/θɪn/",
+    "level": "primary",
+    "freq_rank": 393
+  },
+  {
+    "id": 394,
+    "word": "dinner",
+    "meaning": "n.正餐,宴会",
+    "phonetic": "/ˈdɪnər/",
+    "level": "primary",
+    "freq_rank": 394
+  },
+  {
+    "id": 395,
+    "word": "egg",
+    "meaning": "n.蛋;卵",
+    "phonetic": "/ɛg/",
+    "level": "primary",
+    "freq_rank": 395
+  },
+  {
+    "id": 396,
+    "word": "sad",
+    "meaning": "adj.(使人)悲伤的",
+    "phonetic": "/sæd/",
+    "level": "primary",
+    "freq_rank": 396
+  },
+  {
+    "id": 397,
+    "word": "birthday",
+    "meaning": "n.生日",
+    "phonetic": "/ˈbərθˌdeɪ/",
+    "level": "primary",
+    "freq_rank": 397
+  },
+  {
+    "id": 398,
+    "word": "lovely",
+    "meaning": "adj.美好的;可爱的",
+    "phonetic": "/ˈləvli/",
+    "level": "primary",
+    "freq_rank": 398
+  },
+  {
+    "id": 399,
+    "word": "cool",
+    "meaning": "adj.凉的,凉爽的;酷",
+    "phonetic": "/kul/",
+    "level": "primary",
+    "freq_rank": 399
+  },
+  {
+    "id": 400,
+    "word": "kid",
+    "meaning": "n.小孩",
+    "phonetic": "/kɪd/",
+    "level": "primary",
+    "freq_rank": 400
+  },
+  {
+    "id": 401,
+    "word": "ear",
+    "meaning": "n.耳朵;耳状物;听力,听觉",
+    "phonetic": "/ɪr/",
+    "level": "primary",
+    "freq_rank": 401
+  },
+  {
+    "id": 402,
+    "word": "ice",
+    "meaning": "n.冰",
+    "phonetic": "/aɪs/",
+    "level": "primary",
+    "freq_rank": 402
+  },
+  {
+    "id": 403,
+    "word": "ice cream",
+    "meaning": "n.冰淇淋",
+    "phonetic": "/aɪs krim/",
+    "level": "primary",
+    "freq_rank": 403
+  },
+  {
+    "id": 404,
+    "word": "lunch",
+    "meaning": "n.午餐,午饭",
+    "phonetic": "/lənʧ/",
+    "level": "primary",
+    "freq_rank": 404
+  },
+  {
+    "id": 405,
+    "word": "cat",
+    "meaning": "n.猫",
+    "phonetic": "/kæt/",
+    "level": "primary",
+    "freq_rank": 405
+  },
+  {
+    "id": 406,
+    "word": "busy",
+    "meaning": "adj.忙(碌)的",
+    "phonetic": "/ˈbɪzi/",
+    "level": "primary",
+    "freq_rank": 406
+  },
+  {
+    "id": 407,
+    "word": "favourite (AmE favorite)",
+    "meaning": "adj.n.喜爱的;特别喜爱的人(或物)",
+    "phonetic": "/ˈfeɪvərɪt (eɪm ˈfeɪvərɪt)/",
+    "level": "primary",
+    "freq_rank": 407
+  },
+  {
+    "id": 408,
+    "word": "fruit",
+    "meaning": "n.水果;果实",
+    "phonetic": "/frut/",
+    "level": "primary",
+    "freq_rank": 408
+  },
+  {
+    "id": 409,
+    "word": "wake",
+    "meaning": "v.醒,醒来,叫醒",
+    "phonetic": "/weɪk/",
+    "level": "primary",
+    "freq_rank": 409
+  },
+  {
+    "id": 410,
+    "word": "coat",
+    "meaning": "n.外套;涂层;表皮;皮毛",
+    "phonetic": "/koʊt/",
+    "level": "primary",
+    "freq_rank": 410
+  },
+  {
+    "id": 411,
+    "word": "milk",
+    "meaning": "n.牛奶",
+    "phonetic": "/mɪlk/",
+    "level": "primary",
+    "freq_rank": 411
+  },
+  {
+    "id": 412,
+    "word": "hurt",
+    "meaning": "vt.伤害,受伤;",
+    "phonetic": "/hərt/",
+    "level": "primary",
+    "freq_rank": 412
+  },
+  {
+    "id": 413,
+    "word": "fan",
+    "meaning": "n.风扇;影迷;球迷",
+    "phonetic": "/fæn/",
+    "level": "primary",
+    "freq_rank": 413
+  },
+  {
+    "id": 414,
+    "word": "plane",
+    "meaning": "n.飞机",
+    "phonetic": "/pleɪn/",
+    "level": "primary",
+    "freq_rank": 414
+  },
+  {
+    "id": 415,
+    "word": "swim",
+    "meaning": "vi.游泳,游",
+    "phonetic": "/swɪm/",
+    "level": "primary",
+    "freq_rank": 415
+  },
+  {
+    "id": 416,
+    "word": "gift",
+    "meaning": "n.礼物;赠品",
+    "phonetic": "/gɪft/",
+    "level": "primary",
+    "freq_rank": 416
+  },
+  {
+    "id": 417,
+    "word": "yellow",
+    "meaning": "n.adj.黄色;黄色的",
+    "phonetic": "/ˈjɛloʊ/",
+    "level": "primary",
+    "freq_rank": 417
+  },
+  {
+    "id": 418,
+    "word": "angry",
+    "meaning": "adj.生气的,愤怒的",
+    "phonetic": "/ˈæŋgri/",
+    "level": "primary",
+    "freq_rank": 418
+  },
+  {
+    "id": 419,
+    "word": "lake",
+    "meaning": "n.湖",
+    "phonetic": "/leɪk/",
+    "level": "primary",
+    "freq_rank": 419
+  },
+  {
+    "id": 420,
+    "word": "tall",
+    "meaning": "adj.高的",
+    "phonetic": "/tɔl/",
+    "level": "primary",
+    "freq_rank": 420
+  },
+  {
+    "id": 421,
+    "word": "tired",
+    "meaning": "adj.疲劳的,累的",
+    "phonetic": "/taɪərd/",
+    "level": "primary",
+    "freq_rank": 421
+  },
+  {
+    "id": 422,
+    "word": "nose",
+    "meaning": "n.鼻",
+    "phonetic": "/noʊz/",
+    "level": "primary",
+    "freq_rank": 422
+  },
+  {
+    "id": 423,
+    "word": "grass",
+    "meaning": "n.草;草场;牧草",
+    "phonetic": "/græs/",
+    "level": "primary",
+    "freq_rank": 423
+  },
+  {
+    "id": 424,
+    "word": "shoe",
+    "meaning": "n.鞋",
+    "phonetic": "/ʃu/",
+    "level": "primary",
+    "freq_rank": 424
+  },
+  {
+    "id": 425,
+    "word": "beach",
+    "meaning": "n.海滨,海滩",
+    "phonetic": "/biʧ/",
+    "level": "primary",
+    "freq_rank": 425
+  },
+  {
+    "id": 426,
+    "word": "maths (=mathematics, AmE math)",
+    "meaning": "n.数学",
+    "phonetic": "/maths* (=ˌmæθəˈmætɪks, eɪm mæθ)/",
+    "level": "primary",
+    "freq_rank": 426
+  },
+  {
+    "id": 427,
+    "word": "shirt",
+    "meaning": "n.男衬衫",
+    "phonetic": "/ʃərt/",
+    "level": "primary",
+    "freq_rank": 427
+  },
+  {
+    "id": 428,
+    "word": "sweep",
+    "meaning": "v.扫除,扫",
+    "phonetic": "/swip/",
+    "level": "primary",
+    "freq_rank": 428
+  },
+  {
+    "id": 429,
+    "word": "breakfast",
+    "meaning": "n.早餐",
+    "phonetic": "/ˈbrɛkfəst/",
+    "level": "primary",
+    "freq_rank": 429
+  },
+  {
+    "id": 430,
+    "word": "desk",
+    "meaning": "n.书桌,写字台",
+    "phonetic": "/dɛsk/",
+    "level": "primary",
+    "freq_rank": 430
+  },
+  {
+    "id": 431,
+    "word": "lesson",
+    "meaning": "n.课;功课;教训",
+    "phonetic": "/ˈlɛsən/",
+    "level": "primary",
+    "freq_rank": 431
+  },
+  {
+    "id": 432,
+    "word": "cloudy",
+    "meaning": "adj.多云的,阴天的",
+    "phonetic": "/ˈklaʊdi/",
+    "level": "primary",
+    "freq_rank": 432
+  },
+  {
+    "id": 433,
+    "word": "snow",
+    "meaning": "n.v.雪;下雪",
+    "phonetic": "/snoʊ/",
+    "level": "primary",
+    "freq_rank": 433
+  },
+  {
+    "id": 434,
+    "word": "tail",
+    "meaning": "n.(动物的)尾巴",
+    "phonetic": "/teɪl/",
+    "level": "primary",
+    "freq_rank": 434
+  },
+  {
+    "id": 435,
+    "word": "aunt",
+    "meaning": "n.伯母;舅母;审;姑;姨",
+    "phonetic": "/ɔnt/",
+    "level": "primary",
+    "freq_rank": 435
+  },
+  {
+    "id": 436,
+    "word": "autumn",
+    "meaning": "n.秋天,秋季",
+    "phonetic": "/ˈɔtəm/",
+    "level": "primary",
+    "freq_rank": 436
+  },
+  {
+    "id": 437,
+    "word": "meat",
+    "meaning": "n.(猪、牛、羊等的)肉",
+    "phonetic": "/mit/",
+    "level": "primary",
+    "freq_rank": 437
+  },
+  {
+    "id": 438,
+    "word": "hurry",
+    "meaning": "vi.赶快,急忙",
+    "phonetic": "/ˈhəri/",
+    "level": "primary",
+    "freq_rank": 438
+  },
+  {
+    "id": 439,
+    "word": "dirty",
+    "meaning": "adj.脏的",
+    "phonetic": "/ˈdərti/",
+    "level": "primary",
+    "freq_rank": 439
+  },
+  {
+    "id": 440,
+    "word": "pink",
+    "meaning": "adj.粉红色的",
+    "phonetic": "/pɪŋk/",
+    "level": "primary",
+    "freq_rank": 440
+  },
+  {
+    "id": 441,
+    "word": "bread",
+    "meaning": "n.面包;食物",
+    "phonetic": "/brɛd/",
+    "level": "primary",
+    "freq_rank": 441
+  },
+  {
+    "id": 442,
+    "word": "cap",
+    "meaning": "n.(无檐的或仅在前面有檐的)帽子",
+    "phonetic": "/kæp/",
+    "level": "primary",
+    "freq_rank": 442
+  },
+  {
+    "id": 443,
+    "word": "cake",
+    "meaning": "n.蛋糕;糕点;饼",
+    "phonetic": "/keɪk/",
+    "level": "primary",
+    "freq_rank": 443
+  },
+  {
+    "id": 444,
+    "word": "goodbye (bye)",
+    "meaning": "int.再见;再会",
+    "phonetic": "/ˌgʊdˈbaɪ (baɪ)/",
+    "level": "primary",
+    "freq_rank": 444
+  },
+  {
+    "id": 445,
+    "word": "uncle",
+    "meaning": "n.叔;伯;舅;姑夫;姨父",
+    "phonetic": "/ˈəŋkəl/",
+    "level": "primary",
+    "freq_rank": 445
+  },
+  {
+    "id": 446,
+    "word": "apple",
+    "meaning": "n.苹果",
+    "phonetic": "/ˈæpəl/",
+    "level": "primary",
+    "freq_rank": 446
+  },
+  {
+    "id": 447,
+    "word": "chicken",
+    "meaning": "n.鸡;鸡肉",
+    "phonetic": "/ˈʧɪkən/",
+    "level": "primary",
+    "freq_rank": 447
+  },
+  {
+    "id": 448,
+    "word": "orange",
+    "meaning": "n.adj.橘子,橙子,橘子汁;橙色的",
+    "phonetic": "/ˈɔrɪnʤ/",
+    "level": "primary",
+    "freq_rank": 448
+  },
+  {
+    "id": 449,
+    "word": "hungry",
+    "meaning": "adj.(饥)饿的",
+    "phonetic": "/ˈhəŋgri/",
+    "level": "primary",
+    "freq_rank": 449
+  },
+  {
+    "id": 450,
+    "word": "moon",
+    "meaning": "n.月球;月光;月状物",
+    "phonetic": "/mun/",
+    "level": "primary",
+    "freq_rank": 450
+  },
+  {
+    "id": 451,
+    "word": "sheep (pl. sheep)",
+    "meaning": "n.(绵)羊;羊皮;驯服者",
+    "phonetic": "/ʃip (pl*. ʃip)/",
+    "level": "primary",
+    "freq_rank": 451
+  },
+  {
+    "id": 452,
+    "word": "mouse",
+    "meaning": "n.鼠,耗子;(计算机)鼠标",
+    "phonetic": "/maʊs (pl*. maɪs)/",
+    "level": "primary",
+    "freq_rank": 452
+  },
+  {
+    "id": 453,
+    "word": "pen",
+    "meaning": "n.钢笔,笔",
+    "phonetic": "/pɛn/",
+    "level": "primary",
+    "freq_rank": 453
+  },
+  {
+    "id": 454,
+    "word": "pig",
+    "meaning": "n.猪",
+    "phonetic": "/pɪg/",
+    "level": "primary",
+    "freq_rank": 454
+  },
+  {
+    "id": 455,
+    "word": "vegetable",
+    "meaning": "n.蔬菜",
+    "phonetic": "/ˈvɛʤtəbəl/",
+    "level": "primary",
+    "freq_rank": 455
+  },
+  {
+    "id": 456,
+    "word": "ping-pong",
+    "meaning": "n.乒乓球",
+    "phonetic": "/ˈpɪŋˌpɔŋ/",
+    "level": "primary",
+    "freq_rank": 456
+  },
+  {
+    "id": 457,
+    "word": "clever",
+    "meaning": "adj.聪明的,伶俐的",
+    "phonetic": "/ˈklɛvər/",
+    "level": "primary",
+    "freq_rank": 457
+  },
+  {
+    "id": 458,
+    "word": "duck",
+    "meaning": "n.鸭子",
+    "phonetic": "/dək/",
+    "level": "primary",
+    "freq_rank": 458
+  },
+  {
+    "id": 459,
+    "word": "cow",
+    "meaning": "n.母牛,奶牛",
+    "phonetic": "/kaʊ/",
+    "level": "primary",
+    "freq_rank": 459
+  },
+  {
+    "id": 460,
+    "word": "bike (=bicycle)",
+    "meaning": "n.自行车",
+    "phonetic": "/baɪk (=ˈbaɪsɪkəl)/",
+    "level": "primary",
+    "freq_rank": 460
+  },
+  {
+    "id": 461,
+    "word": "rabbit",
+    "meaning": "n.兔,家兔",
+    "phonetic": "/ˈræbɪt/",
+    "level": "primary",
+    "freq_rank": 461
+  },
+  {
+    "id": 462,
+    "word": "trousers",
+    "meaning": "n.裤子,长裤",
+    "phonetic": "/ˈtraʊzərz/",
+    "level": "primary",
+    "freq_rank": 462
+  },
+  {
+    "id": 463,
+    "word": "potato",
+    "meaning": "n.土豆,马铃薯",
+    "phonetic": "/pəˈteɪˌtoʊ/",
+    "level": "primary",
+    "freq_rank": 463
+  },
+  {
+    "id": 464,
+    "word": "piano",
+    "meaning": "n.钢琴",
+    "phonetic": "/piˈænə/",
+    "level": "primary",
+    "freq_rank": 464
+  },
+  {
+    "id": 465,
+    "word": "cousin",
+    "meaning": "n.堂(表)兄弟,堂(表)姐妹",
+    "phonetic": "/ˈkəzən/",
+    "level": "primary",
+    "freq_rank": 465
+  },
+  {
+    "id": 466,
+    "word": "toy",
+    "meaning": "n.玩具;玩物",
+    "phonetic": "/tɔɪ/",
+    "level": "primary",
+    "freq_rank": 466
+  },
+  {
+    "id": 467,
+    "word": "cinema",
+    "meaning": "n.电影院;电影",
+    "phonetic": "/ˈsɪnəmə/",
+    "level": "primary",
+    "freq_rank": 467
+  },
+  {
+    "id": 468,
+    "word": "taxi",
+    "meaning": "n.出租汽车",
+    "phonetic": "/ˈtæksi/",
+    "level": "primary",
+    "freq_rank": 468
+  },
+  {
+    "id": 469,
+    "word": "lion",
+    "meaning": "n.狮子",
+    "phonetic": "/laɪən/",
+    "level": "primary",
+    "freq_rank": 469
+  },
+  {
+    "id": 470,
+    "word": "juice",
+    "meaning": "n.汁;液",
+    "phonetic": "/ʤus/",
+    "level": "primary",
+    "freq_rank": 470
+  },
+  {
+    "id": 471,
+    "word": "toilet",
+    "meaning": "n.厕所",
+    "phonetic": "/ˈtɔɪlət/",
+    "level": "primary",
+    "freq_rank": 471
+  },
+  {
+    "id": 472,
+    "word": "tidy",
+    "meaning": "adj.整洁的,干净的",
+    "phonetic": "/ˈtaɪdi/",
+    "level": "primary",
+    "freq_rank": 472
+  },
+  {
+    "id": 473,
+    "word": "skirt",
+    "meaning": "n.女裙",
+    "phonetic": "/skərt/",
+    "level": "primary",
+    "freq_rank": 473
+  },
+  {
+    "id": 474,
+    "word": "pet",
+    "meaning": "n.宠物,爱畜",
+    "phonetic": "/pɛt/",
+    "level": "primary",
+    "freq_rank": 474
+  },
+  {
+    "id": 475,
+    "word": "doll",
+    "meaning": "n.玩偶,玩具娃娃",
+    "phonetic": "/dɑl/",
+    "level": "primary",
+    "freq_rank": 475
+  },
+  {
+    "id": 476,
+    "word": "rice",
+    "meaning": "n.稻米;米饭",
+    "phonetic": "/raɪs/",
+    "level": "primary",
+    "freq_rank": 476
+  },
+  {
+    "id": 477,
+    "word": "candle",
+    "meaning": "n.蜡烛",
+    "phonetic": "/ˈkændəl/",
+    "level": "primary",
+    "freq_rank": 477
+  },
+  {
+    "id": 478,
+    "word": "pencil",
+    "meaning": "n.铅笔",
+    "phonetic": "/ˈpɛnsəl/",
+    "level": "primary",
+    "freq_rank": 478
+  },
+  {
+    "id": 479,
+    "word": "elephant",
+    "meaning": "n.象",
+    "phonetic": "/ˈɛləfənt/",
+    "level": "primary",
+    "freq_rank": 479
+  },
+  {
+    "id": 480,
+    "word": "tomato",
+    "meaning": "n.西红柿,番茄",
+    "phonetic": "/təˈmɑˌtoʊ/",
+    "level": "primary",
+    "freq_rank": 480
+  },
+  {
+    "id": 481,
+    "word": "soup",
+    "meaning": "n.汤",
+    "phonetic": "/sup/",
+    "level": "primary",
+    "freq_rank": 481
+  },
+  {
+    "id": 482,
+    "word": "bee",
+    "meaning": "n.蜜蜂",
+    "phonetic": "/bi/",
+    "level": "primary",
+    "freq_rank": 482
+  },
+  {
+    "id": 483,
+    "word": "tiger",
+    "meaning": "n.老虎",
+    "phonetic": "/ˈtaɪgər/",
+    "level": "primary",
+    "freq_rank": 483
+  },
+  {
+    "id": 484,
+    "word": "sock",
+    "meaning": "n.短袜",
+    "phonetic": "/sɑk/",
+    "level": "primary",
+    "freq_rank": 484
+  },
+  {
+    "id": 485,
+    "word": "monkey",
+    "meaning": "n.猴子",
+    "phonetic": "/ˈməŋki/",
+    "level": "primary",
+    "freq_rank": 485
+  },
+  {
+    "id": 486,
+    "word": "banana",
+    "meaning": "n.香蕉",
+    "phonetic": "/bəˈnænə/",
+    "level": "primary",
+    "freq_rank": 486
+  },
+  {
+    "id": 487,
+    "word": "kite",
+    "meaning": "n.风筝",
+    "phonetic": "/kaɪt/",
+    "level": "primary",
+    "freq_rank": 487
+  },
+  {
+    "id": 488,
+    "word": "robot",
+    "meaning": "n.机器人",
+    "phonetic": "/ˈroʊˌbət/",
+    "level": "primary",
+    "freq_rank": 488
+  },
+  {
+    "id": 489,
+    "word": "umbrella",
+    "meaning": "n.雨伞",
+    "phonetic": "/ˈəmˌbrɛlə/",
+    "level": "primary",
+    "freq_rank": 489
+  },
+  {
+    "id": 490,
+    "word": "zoo",
+    "meaning": "n.动物园",
+    "phonetic": "/zu/",
+    "level": "primary",
+    "freq_rank": 490
+  },
+  {
+    "id": 491,
+    "word": "shorts",
+    "meaning": "n.短裤;运动短裤",
+    "phonetic": "/ʃɔrts/",
+    "level": "primary",
+    "freq_rank": 491
+  },
+  {
+    "id": 492,
+    "word": "grape",
+    "meaning": "n.葡萄",
+    "phonetic": "/greɪp/",
+    "level": "primary",
+    "freq_rank": 492
+  },
+  {
+    "id": 493,
+    "word": "sweater",
+    "meaning": "n.厚运动衫,毛衣",
+    "phonetic": "/sˈwɛtər/",
+    "level": "primary",
+    "freq_rank": 493
+  },
+  {
+    "id": 494,
+    "word": "candy",
+    "meaning": "n.糖果",
+    "phonetic": "/ˈkændi/",
+    "level": "primary",
+    "freq_rank": 494
+  },
+  {
+    "id": 495,
+    "word": "chore",
+    "meaning": "n.家务活; 日常事务",
+    "phonetic": "/ʧɔr/",
+    "level": "primary",
+    "freq_rank": 495
+  },
+  {
+    "id": 496,
+    "word": "cute",
+    "meaning": "adj.可爱的",
+    "phonetic": "/kjut/",
+    "level": "primary",
+    "freq_rank": 496
+  },
+  {
+    "id": 497,
+    "word": "panda",
+    "meaning": "n.熊猫",
+    "phonetic": "/ˈpændə/",
+    "level": "primary",
+    "freq_rank": 497
+  },
+  {
+    "id": 498,
+    "word": "basketball",
+    "meaning": "n.篮球",
+    "phonetic": "/ˈbæskətˌbɔl/",
+    "level": "primary",
+    "freq_rank": 498
+  },
+  {
+    "id": 499,
+    "word": "astronaut",
+    "meaning": "n.宇航员; 航天员",
+    "phonetic": "/ˈæstrəˌnɑt/",
+    "level": "primary",
+    "freq_rank": 499
+  },
+  {
+    "id": 500,
+    "word": "noodle",
+    "meaning": "n.面条",
+    "phonetic": "/ˈnudəl/",
+    "level": "primary",
+    "freq_rank": 500
+  },
+  {
+    "id": 501,
+    "word": "Internet",
+    "meaning": "n.互联网;因特网",
+    "phonetic": "/ˈɪntərˌnɛt/",
+    "level": "primary",
+    "freq_rank": 501
+  },
+  {
+    "id": 502,
+    "word": "email",
+    "meaning": "n.v.电子邮件;发电子邮件",
+    "phonetic": "/iˈmeɪl/",
+    "level": "primary",
+    "freq_rank": 502
+  },
+  {
+    "id": 503,
+    "word": "China",
+    "meaning": "n.中国",
+    "phonetic": "/ˈʧaɪnə/",
+    "level": "primary",
+    "freq_rank": 503
+  },
+  {
+    "id": 504,
+    "word": "Chinese",
+    "meaning": "adj.&n.中国的;中国人的;中国话的,汉语的;中国人;中国话,汉语,中文",
+    "phonetic": "/ʧaɪˈniz/",
+    "level": "primary",
+    "freq_rank": 504
+  },
+  {
+    "id": 505,
+    "word": "English",
+    "meaning": "adj.n.英国的;英国人的;英语的;英语",
+    "phonetic": "/ˈɪŋlɪʃ/",
+    "level": "primary",
+    "freq_rank": 505
+  }
+]
