@@ -108,8 +108,8 @@ function navigate(page) {
   if (page === 'admin') { loadAdminStats(); adminTab('overview'); }
 }
 
-function scrollToHow() {
-  document.getElementById('how-section')?.scrollIntoView({ behavior: 'smooth' });
+function scrollToSection(id) {
+  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 }
 
 // ── Home ───────────────────────────────────────────────────
@@ -160,6 +160,7 @@ function renderQuestion(q, answered, total) {
   feedback.className = 'answer-feedback hidden';
   container.innerHTML = '';
 
+  // 6个选项
   q.choices.forEach(c => {
     const btn = document.createElement('button');
     btn.className = 'choice-btn';
@@ -167,29 +168,43 @@ function renderQuestion(q, answered, total) {
     btn.onclick = () => submitAnswer(c.meaning, q);
     container.appendChild(btn);
   });
+
+  // "不认识" 按钮单独一行
+  const unknownBtn = document.createElement('button');
+  unknownBtn.className = 'choice-btn choice-unknown';
+  unknownBtn.textContent = '😶 不认识这个词';
+  unknownBtn.onclick = () => submitAnswer('', q, true);
+  container.appendChild(unknownBtn);
 }
 
-async function submitAnswer(chosenMeaning, question) {
-  // Disable all buttons
+async function submitAnswer(chosenMeaning, question, unknown = false) {
   document.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
 
-  const res = await api('/api/assess/answer', 'POST', {
-    session_id: assessState.sessionId,
-    chosen_meaning: chosenMeaning,
-  });
+  const payload = { session_id: assessState.sessionId };
+  if (unknown) {
+    payload.unknown = true;
+  } else {
+    payload.chosen_meaning = chosenMeaning;
+  }
 
-  // Highlight correct/wrong
+  const res = await api('/api/assess/answer', 'POST', payload);
+
   const correct = res.correct;
+
+  // 高亮正确/错误选项（不认识时只显示正确答案）
   document.querySelectorAll('.choice-btn').forEach(b => {
     if (b.textContent === question.meaning) b.classList.add('correct');
-    else if (b.textContent === chosenMeaning && !correct) b.classList.add('wrong');
+    else if (!unknown && b.textContent === chosenMeaning && !correct) b.classList.add('wrong');
   });
 
   const feedback = document.getElementById('answer-feedback');
   feedback.classList.remove('hidden');
-  if (correct) {
+  if (unknown) {
+    feedback.className = 'answer-feedback wrong';
+    feedback.textContent = `📖 正确答案：${question.meaning}`;
+  } else if (correct) {
     feedback.className = 'answer-feedback correct';
-    feedback.textContent = '✓ 正确！';
+    feedback.textContent = '✓ 回答正确！';
   } else {
     feedback.className = 'answer-feedback wrong';
     feedback.textContent = `✗ 正确答案：${question.meaning}`;
@@ -197,10 +212,10 @@ async function submitAnswer(chosenMeaning, question) {
 
   if (res.done) {
     assessState.result = res.result;
-    setTimeout(() => showResult(res.result), 900);
+    setTimeout(() => showResult(res.result), 1000);
   } else {
     assessState.currentWord = res.question;
-    setTimeout(() => renderQuestion(res.question, res.answered, res.total), 900);
+    setTimeout(() => renderQuestion(res.question, res.answered, res.total), 1000);
   }
 }
 
@@ -208,20 +223,35 @@ async function submitAnswer(chosenMeaning, question) {
 function showResult(result) {
   navigate('result');
   const emojis = { '小学': '🌱', '初中': '📖', '高中': '🎓', '大学及以上': '🏆' };
-  document.getElementById('result-emoji').textContent = emojis[result.estimated_level] || '🎉';
+  // 提前结束用不同 emoji
+  const stopEmoji = { consecutive_5: '😅', total_10: '😓' };
+  document.getElementById('result-emoji').textContent =
+    (result.stop_reason ? stopEmoji[result.stop_reason] : null) || emojis[result.estimated_level] || '🎉';
+
+  // 结束原因提示
+  const stopMsgEl = document.getElementById('result-stop-msg');
+  if (stopMsgEl) {
+    if (result.stop_msg) {
+      stopMsgEl.textContent = result.stop_msg;
+      stopMsgEl.classList.remove('hidden');
+    } else {
+      stopMsgEl.classList.add('hidden');
+    }
+  }
   document.getElementById('result-score').textContent = result.score.toLocaleString();
   document.getElementById('result-level-badge').textContent = result.estimated_level + '水平';
   document.getElementById('r-accuracy').textContent = Math.round(result.accuracy * 100) + '%';
   document.getElementById('r-correct').textContent = result.correct;
   document.getElementById('r-total').textContent = result.answered;
-  document.getElementById('r-algo').textContent = result.algo === 'irt' ? 'IRT' : '二分';
+  document.getElementById('r-wrong').textContent = result.total_wrong ?? (result.answered - result.correct);
 
   const detailList = document.getElementById('result-details');
   detailList.innerHTML = '';
   (result.details || []).forEach(d => {
     const div = document.createElement('div');
     div.className = 'detail-item';
-    div.innerHTML = `<span class="di-icon">${d.correct ? '✅' : '❌'}</span>
+    const icon = d.correct ? '✅' : (d.unknown ? '😶' : '❌');
+    div.innerHTML = `<span class="di-icon">${icon}</span>
       <span class="di-word">${esc(d.word)}</span>
       <span class="di-meaning">${esc(d.meaning)}</span>`;
     detailList.appendChild(div);
@@ -243,9 +273,9 @@ async function loadDashboard() {
   if (!currentUser) { navigate('login'); return; }
   const stats = await api('/api/user/stats');
   if (stats.total_tests !== undefined) {
-    document.getElementById('dash-total-tests').querySelector('.ds-v').textContent = stats.total_tests;
-    document.getElementById('dash-best-score').querySelector('.ds-v').textContent = stats.best_score.toLocaleString();
-    document.getElementById('dash-avg-acc').querySelector('.ds-v').textContent = Math.round(stats.avg_accuracy * 100) + '%';
+    document.getElementById('dash-total-tests-v').textContent = stats.total_tests;
+    document.getElementById('dash-best-score-v').textContent = stats.best_score.toLocaleString();
+    document.getElementById('dash-avg-acc-v').textContent = Math.round(stats.avg_accuracy * 100) + '%';
     drawTrendChart(stats.trend);
   }
   loadHistory(1);
@@ -262,7 +292,7 @@ async function loadHistory(page) {
     div.innerHTML = `
       <div class="hi-score">${r.score}</div>
       <div>
-        <div style="font-weight:600">${levelNames[r.level] || r.level} · ${r.algo === 'irt' ? 'IRT算法' : '二分算法'}</div>
+        <div class="hi-name">${levelNames[r.level] || r.level} · ${r.algo === 'irt' ? 'IRT算法' : '二分算法'}</div>
         <div class="hi-info">${r.correct}/${r.total} 正确 · ${Math.round(r.accuracy*100)}% · ${fmtDate(r.created_at)}</div>
       </div>
       <span class="hi-badge">${r.estimated_level}</span>`;
@@ -381,11 +411,11 @@ async function submitReview(quality) {
 }
 
 // ── Admin ──────────────────────────────────────────────────
-function adminTab(tab) {
+function adminTab(tab, btn) {
   document.querySelectorAll('.admin-panel').forEach(p => p.classList.add('hidden'));
   document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('admin-' + tab).classList.remove('hidden');
-  event.target.classList.add('active');
+  if (btn) btn.classList.add('active');
 
   if (tab === 'overview') loadAdminStats();
   if (tab === 'users') loadAdminUsers();

@@ -9,11 +9,18 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def create_app():
     app = Flask(__name__, static_folder='static', template_folder='templates')
+    # 优先使用环境变量中的外部数据库（如 Neon PostgreSQL），本地开发回退到 SQLite
+    db_url = os.environ.get('DATABASE_URL', 'sqlite:///' + os.path.join(BASE_DIR, 'vocab.db'))
+    # Render/Neon 提供的 postgres:// 需要改成 postgresql://
+    if db_url.startswith('postgres://'):
+        db_url = db_url.replace('postgres://', 'postgresql://', 1)
+
     app.config.update(
         SECRET_KEY=os.environ.get('SECRET_KEY', 'vocab-tool-secret-2024-change-in-prod'),
-        SQLALCHEMY_DATABASE_URI='sqlite:///' + os.path.join(BASE_DIR, 'vocab.db'),
+        SQLALCHEMY_DATABASE_URI=db_url,
         SQLALCHEMY_TRACK_MODIFICATIONS=False,
         SESSION_COOKIE_SAMESITE='Lax',
+        SESSION_COOKIE_SECURE=os.environ.get('DATABASE_URL') is not None,
     )
 
     db.init_app(app)

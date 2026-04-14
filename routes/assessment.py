@@ -49,8 +49,8 @@ def _build_pool(level: str) -> list[dict]:
     return pool
 
 
-def _make_choices(word: dict, pool: list[dict], n: int = 4) -> list[dict]:
-    """Return n multiple-choice options including the correct one."""
+def _make_choices(word: dict, pool: list[dict], n: int = 6) -> list[dict]:
+    """Return n multiple-choice options (1 correct + n-1 distractors)."""
     others = random.sample([w for w in pool if w['word'] != word['word']], min(n - 1, len(pool) - 1))
     choices = others + [word]
     random.shuffle(choices)
@@ -209,7 +209,7 @@ def start():
         return jsonify({'error': '无效词库'}), 400
     if algo not in ('binary', 'irt'):
         algo = 'binary'
-    max_q = max(5, min(50, max_q))
+    max_q = max(30, min(50, max_q))
 
     pool = _build_pool(level)
     if not pool:
@@ -225,6 +225,9 @@ def start():
         'correct': 0,
         'tried': set(),
         'details': [],
+        # 结束条件计数
+        'consecutive_wrong': 0,   # 连续答错次数
+        'total_wrong': 0,         # 累计答错次数
         # binary
         'lo': 0,
         'hi': len(pool),
@@ -265,7 +268,11 @@ def answer():
         return jsonify({'error': '没有待回答的问题'}), 400
 
     # Determine correctness
-    if correct_flag is not None:
+    # unknown=True 表示用户点了"不认识"，直接计为错误
+    unknown = bool(data.get('unknown', False))
+    if unknown:
+        correct = False
+    elif correct_flag is not None:
         correct = bool(correct_flag)
     else:
         correct = (chosen_meaning.strip() == word['meaning'].strip())
@@ -275,8 +282,16 @@ def answer():
         'word': word['word'],
         'meaning': word['meaning'],
         'correct': correct,
+        'unknown': unknown,
         'rank': word.get('global_rank', idx),
     })
+
+    # 更新连续/累计答错计数
+    if correct:
+        state['consecutive_wrong'] = 0
+    else:
+        state['consecutive_wrong'] += 1
+        state['total_wrong'] += 1
 
     # Update algorithm state
     if state['algo'] == 'irt':
@@ -290,10 +305,17 @@ def answer():
     else:
         _binary_update(state, idx, correct)
 
+    # 检查结束条件：连续答错5个 或 累计答错10个
+    stop_reason = None
+    if state['consecutive_wrong'] >= 5:
+        stop_reason = 'consecutive_5'
+    elif state['total_wrong'] >= 10:
+        stop_reason = 'total_10'
+
     # Next question or finish
-    next_word = _get_next_word(state)
+    next_word = None if stop_reason else _get_next_word(state)
     if next_word is None:
-        return _finish(sess_id, state)
+        return _finish(sess_id, state, stop_reason=stop_reason)
 
     state['current_word'] = next_word
     state['current_idx'] = _word_idx(state, next_word)
@@ -302,6 +324,8 @@ def answer():
         'correct': correct,
         'answered': state['answered'],
         'total': state['max_q'],
+        'consecutive_wrong': state['consecutive_wrong'],
+        'total_wrong': state['total_wrong'],
         'question': _question_payload(next_word, state['pool']),
     })
 
@@ -316,15 +340,19 @@ def result(sess_id):
     return jsonify(_build_result(sess_id, state))
 
 
-def _finish(sess_id: str, state: dict):
-    result = _build_result(sess_id, state)
-    # Persist to DB
+def _finish(sess_id: str, state: dict, stop_reason: str = None):
+    result = _build_result(sess_id, state, stop_reason=stop_reason)
     _save_record(state, result)
     del _sessions[sess_id]
     return jsonify({'done': True, 'result': result})
 
 
-def _build_result(sess_id: str, state: dict) -> dict:
+STOP_REASON_MSG = {
+    'consecutive_5': '连续答错 5 题，测评提前结束',
+    'total_10':      '累计答错 10 题，测评提前结束',
+}
+
+def _build_result(sess_id: str, state: dict, stop_reason: str = None) -> dict:
     if state['algo'] == 'irt':
         score = _irt_score(state)
     else:
@@ -339,10 +367,13 @@ def _build_result(sess_id: str, state: dict) -> dict:
         'accuracy': round(accuracy, 3),
         'correct': state['correct'],
         'answered': state['answered'],
+        'total_wrong': state['total_wrong'],
         'estimated_level': est_level,
         'algo': state['algo'],
         'level': state['level'],
         'details': state['details'],
+        'stop_reason': stop_reason,
+        'stop_msg': STOP_REASON_MSG.get(stop_reason, ''),
     }
 
 
