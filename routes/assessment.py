@@ -16,7 +16,7 @@ import uuid
 from datetime import datetime, timezone
 from flask import Blueprint, jsonify, request, session as flask_session
 from flask_login import current_user
-from models import db, TestRecord, WordBank
+from models import db, TestRecord, WordBank, LearningRecord
 from routes.wordbank import load_words
 
 assess_bp = Blueprint('assess', __name__, url_prefix='/api/assess')
@@ -293,6 +293,7 @@ def answer():
         'correct': correct,
         'unknown': unknown,
         'rank': word.get('global_rank', idx),
+        'word_bank_id': word.get('id'),
     })
 
     # 更新连续/累计答错计数
@@ -400,6 +401,34 @@ def _save_record(state: dict, result: dict):
         details=json.dumps(result['details'], ensure_ascii=False),
     )
     db.session.add(record)
+
+    # 登录用户：把答错的单词加入间隔重复学习队列
+    if current_user.is_authenticated:
+        now = datetime.now(timezone.utc)
+        for d in result['details']:
+            if d['correct']:
+                continue
+            # 优先用已存的 word_bank_id，否则按单词文本查库
+            word_bank_id = d.get('word_bank_id')
+            if not word_bank_id:
+                wb = WordBank.query.filter_by(word=d['word']).first()
+                if wb:
+                    word_bank_id = wb.id
+            if not word_bank_id:
+                continue
+            # 已在学习队列中则跳过，不重复添加
+            exists = LearningRecord.query.filter_by(
+                user_id=current_user.id,
+                word_bank_id=word_bank_id,
+            ).first()
+            if not exists:
+                db.session.add(LearningRecord(
+                    user_id=current_user.id,
+                    word_bank_id=word_bank_id,
+                    next_review=now,   # 第1天：测评结束后立即可复习
+                    interval_days=1,
+                ))
+
     db.session.commit()
 
 
