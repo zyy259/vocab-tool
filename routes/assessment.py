@@ -62,6 +62,7 @@ def _question_payload(word: dict, pool: list[dict]) -> dict:
         'word_id': word.get('id') or word.get('global_rank'),
         'word': word['word'],
         'phonetic': word.get('phonetic', ''),
+        'meaning': word['meaning'],
         'choices': _make_choices(word, pool),
         'level_hint': word.get('level', ''),
     }
@@ -77,7 +78,9 @@ def _binary_next(state: dict) -> dict | None:
     if hi - lo <= 1 or state['answered'] >= state['max_q']:
         return None
     mid = (lo + hi) // 2
-    # avoid repeating
+    # 在中点附近加随机抖动（±1/8 范围），保持二分精度的同时打乱顺序
+    jitter = random.randint(-max(1, (hi - lo) // 8), max(1, (hi - lo) // 8))
+    mid = max(lo, min(hi - 1, mid + jitter))
     tried = state['tried']
     for delta in range(0, (hi - lo) // 2 + 1):
         for idx in (mid - delta, mid + delta):
@@ -103,7 +106,12 @@ def _binary_update(state: dict, word_idx: int, correct: bool):
 
 def _irt_prob(theta: float, b: float, a: float = 1.0) -> float:
     """P(correct | theta, a, b) using 2-PL logistic model."""
-    return 1.0 / (1.0 + math.exp(-a * (theta - b)))
+    exponent = -a * (theta - b)
+    if exponent > 500:
+        return 0.0
+    if exponent < -500:
+        return 1.0
+    return 1.0 / (1.0 + math.exp(exponent))
 
 
 def _irt_information(theta: float, b: float, a: float = 1.0) -> float:
@@ -141,20 +149,21 @@ def _irt_select_next(state: dict) -> dict | None:
     tried = state['tried']
     if state['answered'] >= state['max_q']:
         return None
-    # pick word with highest information
-    best_info = -1
-    best_word = None
-    best_idx = None
+    # 计算所有候选词的信息量
+    scored = []
     for idx, w in enumerate(pool):
         if idx in tried:
             continue
         b = _b_for_word(w, len(pool))
         info = _irt_information(theta, b)
-        if info > best_info:
-            best_info = info
-            best_word = w
-            best_idx = idx
-    return best_word
+        scored.append((idx, info))
+    if not scored:
+        return None
+    best_info = max(info for _, info in scored)
+    # 从信息量在最高值 90% 以上的候选词里随机选，避免每次固定选同一个词
+    top_candidates = [idx for idx, info in scored if info >= best_info * 0.9]
+    chosen_idx = random.choice(top_candidates)
+    return pool[chosen_idx]
 
 
 # ──────────────────────────────────────────────────
